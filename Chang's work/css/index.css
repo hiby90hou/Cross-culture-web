@@ -220,10 +220,10 @@ fieldset[disabled] .my-navbar .btn-link:focus {
   position: absolute;
   bottom: 20%;
   left: 50%;
-  margin-left: -235px;
+  transform: translateX(-50%);
   color: white;
   font-family: 'Open Sans', sans-serif;
-  font-size: 63px;
+  font-size: 55px;
   font-weight: 500;
   text-align: center;
   text-shadow: 2px 2px #000000;
@@ -260,6 +260,11 @@ fieldset[disabled] .my-navbar .btn-link:focus {
   border-color: #81c2d6;
 }
 /* introduction */
+@media (min-width: 767px) {
+  .introduction h2 {
+    font-size: 55px;
+  }
+}
 .introduction {
   background-color: rgba(0, 0, 0, 0);
   text-align: center;
@@ -267,12 +272,11 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 }
 .introduction h2 {
   margin-bottom: 20px;
-  font-size: 63px;
   font-weight: 600;
 }
 .introduction p {
   padding: 0px;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 500;
   max-width: 1000px;
   margin: 0 auto;
@@ -284,19 +288,19 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 .about_Crossculture > h1,
 .about_event > h1 {
   margin-bottom: 0px;
-  font-size: 63px;
+  font-size: 55px;
   font-weight: 600;
 }
 .about_Crossculture > h2,
 .about_event > h2 {
-  font-size: 40px;
+  font-size: 26px;
   font-weight: 600;
   margin-bottom: 20px;
 }
 .about_Crossculture p,
 .about_event p {
   padding: 0px;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 500;
   max-width: 1000px;
   margin: 0 auto;
@@ -308,11 +312,11 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 .info_table div {
   text-align: left;
   margin-bottom: 20px;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 500;
 }
 .info_table div span {
-  font-size: 23px;
+  font-size: 20px;
 }
 .time_table {
   max-width: 1000px;
@@ -350,30 +354,29 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 }
 /* who can join us*/
 .join_us {
-  max-width: 550px;
-  max-height: 550px;
   width: 100%;
   height: 100vw;
-  background-color: #eee;
-  overflow-y: hidden;
+  max-height: 550px;
   position: relative;
+  overflow: hidden;
 }
 .join_us .origin_point {
   width: 100%;
   height: 100%;
+  max-width: 550px;
+  max-height: 550px;
   position: absolute;
   top: 50%;
   left: 50%;
-  background-color: red;
 }
 .join_us .origin_point .circle1 {
   background-color: #ef2252;
   color: white;
-  width: 30%;
-  height: 30%;
+  width: 36%;
+  height: 36%;
   position: absolute;
-  margin-top: -15%;
-  margin-left: -15%;
+  margin-top: -18%;
+  margin-left: -18%;
 }
 .join_us .origin_point .circle1 p {
   display: block;
@@ -385,12 +388,13 @@ fieldset[disabled] .my-navbar .btn-link:focus {
   font-size: 26px;
   font-weight: 500;
   line-height: 26px;
+  text-align: center;
 }
 .join_us .origin_point .circle1 p span {
-  font-size: 63px;
+  font-size: 55px;
 }
 .join_us .origin_point .circle2 {
-  border: 10px solid #ccc;
+  border: 3px solid #ccc;
   color: white;
   width: 80%;
   height: 80%;
@@ -399,8 +403,9 @@ fieldset[disabled] .my-navbar .btn-link:focus {
   margin-left: -40%;
 }
 .join_us .origin_point .circle3,
-.join_us .origin_point .circle4 {
-  background-color: #81c2d6;
+.join_us .origin_point .circle4,
+.join_us .origin_point .circle5,
+.join_us .origin_point .circle6 {
   color: white;
   width: 26%;
   height: 26%;
@@ -410,7 +415,9 @@ fieldset[disabled] .my-navbar .btn-link:focus {
   transform: translateX(-147%);
 }
 .join_us .origin_point .circle3 p,
-.join_us .origin_point .circle4 p {
+.join_us .origin_point .circle4 p,
+.join_us .origin_point .circle5 p,
+.join_us .origin_point .circle6 p {
   text-align: center;
   display: block;
   margin: auto;
@@ -418,14 +425,40 @@ fieldset[disabled] .my-navbar .btn-link:focus {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 26px;
 }
 .join_us .origin_point .circle3 p span,
-.join_us .origin_point .circle4 p span {
-  font-size: 63px;
+.join_us .origin_point .circle4 p span,
+.join_us .origin_point .circle5 p span,
+.join_us .origin_point .circle6 p span {
+  font-size: 55px;
+}
+.join_us .origin_point .circle3 {
+  transform: rotate(27deg) translateX(-147%) rotate(-27deg);
+  background-color: #81c2d6;
 }
 .join_us .origin_point .circle4 {
-  transform: rotate(110deg) translateX(-147%) rotate(-110deg);
+  transform: rotate(127deg) translateX(-147%) rotate(-127deg);
+  background-color: #d9b3e6;
+}
+.join_us .origin_point .circle5 {
+  transform: rotate(210deg) translateX(-147%) rotate(-210deg);
+  background-color: #9396be;
+}
+.join_us .origin_point .circle6 {
+  transform: rotate(300deg) translateX(-147%) rotate(-300deg);
+  background-color: #83fcd4;
+}
+/* facebook */
+.facebook_box {
+  background-color: #8b9dc3;
+  width: 100%;
+  height: 200px;
+}
+.footer {
+  background-color: #0a1030;
+  width: 100%;
+  height: 200px;
 }

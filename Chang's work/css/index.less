@@ -1,6 +1,16 @@
 @light-pink:#d9b3e6;
 @light-violet:#9396be;
 @light-blue:#81c2d6;
+@light-green:#83fcd4;
+@dark-blue:#0a1030;
+@facebook-blue:#8b9dc3;
+
+@font-l:55px;
+@font-m:26px;
+@font-s:20px;
+@font-ss:16px;
+
+
 
 *{
 	font-family: 'Open Sans', sans-serif;
@@ -24,7 +34,7 @@
 .my-navbar .navbar-nav > li > a {
   color: #777;
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: @font-ss;
   font-weight: 500;
 }
 .my-navbar .navbar-nav > li > a:hover,
@@ -147,7 +157,7 @@ fieldset[disabled] .my-navbar .btn-link:focus {
   min-width: 160px;
   padding: 5px 0;
   margin: 2px 0 0;
-  font-size: 16px;
+  font-size: @font-ss;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -227,10 +237,10 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 	  position: absolute;
 	  bottom: 20%;
 	  left: 50%;
-	  margin-left: -235px;
+	  transform:translateX(-50%);
 	  color: white;
 	  font-family: 'Open Sans', sans-serif;
-	  font-size: 63px;
+	  font-size: @font-l;
 	  font-weight: 500;
 	  text-align: center;
 	  text-shadow: 2px 2px #000000;
@@ -276,19 +286,26 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 
 }
 
+
 /* introduction */
+
+@media (min-width: 767px){
+	.introduction h2{
+		font-size: @font-l;
+	}
+}
 .introduction{
 	background-color: rgba(0,0,0,0);
 	text-align: center;
 	padding: 10px;
 	h2{
 		margin-bottom: 20px;
-		font-size: 63px;
+		// font-size: @font-l;
 		font-weight: 600;
 	}
 	p{
 		padding: 0px;
-		font-size: 30px;
+		font-size: @font-m;
 		font-weight: 500;
 		max-width: 1000px;
 		margin:0 auto;
@@ -301,18 +318,18 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 
 	&>h1{
 		margin-bottom: 0px;
-		font-size: 63px;
+		font-size: @font-l;
 		font-weight: 600;
 	}
 	&>h2{
-		font-size: 40px;
+		font-size: @font-m;
 		font-weight: 600;
 		margin-bottom: 20px;
 
 	}
 	p{
 		padding: 0px;
-		font-size: 30px;
+		font-size: @font-m;
 		font-weight: 500;
 		max-width: 1000px;
 		margin:0 auto;
@@ -325,10 +342,10 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 	div{
 		text-align: left;
 		margin-bottom: 20px;
-		font-size: 30px;
+		font-size: @font-m;
 		font-weight: 500;
 		span{
-			font-size: 23px;
+			font-size: @font-s;
 		}
 	}
 
@@ -372,28 +389,31 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 
 /* who can join us*/
 .join_us{
-	max-width: 550px;
-	max-height: 550px;
+	// max-width: 550px;
+	// max-height: 550px;
 	width: 100%;
 	height:100vw;
-	background-color: #eee;
-	overflow-y: hidden;
+	max-height: 550px;
+	// overflow:hidden;
+	// background-color: #eee;
 	position:relative;
+	overflow:hidden;
 	.origin_point{
 		width: 100%;
 		height: 100%;
+		max-width: 550px;
+		max-height: 550px;
 		position:absolute;
 		top: 50%;
 		left:50%;
-		background-color: red;
 		.circle1{
 			background-color: #ef2252;
 			color:white;
-			width: 30%;
-			height: 30%;
+			width: 36%;
+			height: 36%;
 			position:absolute;
-			margin-top:-15%;
-			margin-left:-15%;
+			margin-top:-18%;
+			margin-left:-18%;
 			p{
 				display:block;
 				margin: auto;
@@ -401,18 +421,20 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 				top: 50%;
 				left:50%;
 				transform: translate(-50%,-50%);
-				font-size: 26px;
+				font-size: @font-m;
 				font-weight: 500;
 				line-height: 26px;
+				text-align: center;
 				span{
-	    			font-size: 63px;
+	    			font-size: @font-l;
+	    			
 	  			}
 
 			}
 
 		}
 		.circle2{
-			border: 10px solid #ccc;
+			border: 3px solid #ccc;
 			color:white;
 			width: 80%;
 			height: 80%;
@@ -420,8 +442,7 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 			margin-top:-40%;
 			margin-left:-40%;
 		}
-		.circle3, .circle4{
-			background-color: @light-blue;
+		.circle3, .circle4, .circle5, .circle6 {
 			color:white;
 			width: 26%;
 			height: 26%;
@@ -437,18 +458,44 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 				top: 50%;
 				left:50%;
 				transform: translate(-50%,-50%);
-				font-size: 20px;
+				font-size: @font-ss;
 				font-weight: 500;
 				line-height: 26px;
 				span{
-	    			font-size: 63px;
+	    			font-size: @font-l;
 	  			}
 
 			}
 
 		}
+		.circle3{
+			transform:rotate(27deg) translateX(-147%) rotate(-27deg);		
+			background-color: @light-blue;
+		}
 		.circle4{
-			transform:rotate(110deg) translateX(-147%) rotate(-110deg);
+			transform:rotate(127deg) translateX(-147%) rotate(-127deg);
+			background-color: @light-pink;
+		}
+		.circle5{
+			transform:rotate(210deg) translateX(-147%) rotate(-210deg);
+			background-color: @light-violet;
+		}
+		.circle6{
+			transform:rotate(300deg) translateX(-147%) rotate(-300deg);
+			background-color: @light-green;
 		}
 	}
+}
+
+/* facebook */
+.facebook_box{
+	background-color: @facebook-blue;
+	width: 100%;
+	height: 200px;
+}
+
+.footer{
+	background-color: @dark-blue;
+	width: 100%;
+	height: 200px;
 }
