@@ -1,0 +1,60 @@
+@imgNum: 7;
+@imgWidth: 100%/@imgNum;
+
+@media (max-width: 768px) {
+	.carousel{
+		height: 180px;
+		}
+	}
+@media (min-width: 768px) {
+	.carousel{
+		height: 320px;
+		}
+	}
+.carousel {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	
+	.carousel_imgs {
+		// 总长度为每一张图片长度*图片数
+		width: @imgNum*100%;
+		// 初始显示第一张图片
+		transform: translate(-@imgWidth);
+
+		li {
+			float: left;
+			width: @imgWidth;
+
+			a{
+				display: block;
+				width: 100%;
+
+				img {
+					display: block;
+					width: 100%;
+				}
+			}
+		}
+	}
+	// 索引图里的索引标签
+	.carousel_index {
+		position: absolute;
+		bottom: 10px;
+		left: 50%;
+		margin-left: -50px;
+
+		li {
+			float: left;
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			border: 1px solid white;
+			margin-left: 5px;
+
+			&.current {
+				background-color: white;
+			}
+		}
+	}
+}

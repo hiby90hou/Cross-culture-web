@@ -1,0 +1,48 @@
+@media (max-width: 768px) {
+  .carousel {
+    height: 180px;
+  }
+}
+@media (min-width: 768px) {
+  .carousel {
+    height: 320px;
+  }
+}
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.carousel .carousel_imgs {
+  width: 700%;
+  transform: translate(-14.28571429%);
+}
+.carousel .carousel_imgs li {
+  float: left;
+  width: 14.28571429%;
+}
+.carousel .carousel_imgs li a {
+  display: block;
+  width: 100%;
+}
+.carousel .carousel_imgs li a img {
+  display: block;
+  width: 100%;
+}
+.carousel .carousel_index {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -50px;
+}
+.carousel .carousel_index li {
+  float: left;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-left: 5px;
+}
+.carousel .carousel_index li.current {
+  background-color: white;
+}

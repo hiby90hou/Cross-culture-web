@@ -1,0 +1,52 @@
+/* 轮播图 */
+.carousel{
+	width: 100%;
+	/* 100px */
+	/*overflow: hidden;*/
+	/* 为了 索引 能够定位 所以 添加 positition */
+	position: relative;
+}
+
+.carousel .carousel_imgs{
+	/* 7倍宽度 为了 在横向 放7张图片 */
+	width: 700%;
+	/* 初始显示第一张 */
+	transform: translate(-30%);
+}
+
+.carousel .carousel_imgs li{
+	float: left;
+	width: 10%;
+
+}
+
+.carousel .carousel_imgs li a{
+	display: block;
+	width: 100%;
+}
+
+.carousel .carousel_imgs li a img{
+	display: block;
+	width: 100%;
+}
+
+/* 轮播图里面的 索引标签 */
+.carousel .banner_index{
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -44px;
+}
+
+.carousel .banner_index li{
+	float: left;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	border: 1px solid white;
+	margin-left: 5px;
+}
+
+.carousel .banner_index li.current{
+	background-color: white;
+}
