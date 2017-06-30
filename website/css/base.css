@@ -13,12 +13,11 @@
             /* 样式输入完毕 在后面tab */
             -webkit-box-sizing: border-box;
             box-sizing: border-box;
-            /* 统一设置文字  sans-serif 移动端 的默认字体 */
-            font-family: '微软雅黑', sans-serif;
+            
         }
         /* input标签 去掉默认样式 */       
         input {
-            border: none;../
+            border: none;
         }
         /* a标签的下划线 */
         a {
