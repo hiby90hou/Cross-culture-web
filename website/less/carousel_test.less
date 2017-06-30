@@ -1,60 +1,79 @@
 @imgNum: 7;
 @imgWidth: 100%/@imgNum;
-
 @media (max-width: 768px) {
-	.carousel{
-		height: 180px;
-		}
-	}
+    .carouselSm {
+        height: 180px;
+    }
+}
+
 @media (min-width: 768px) {
-	.carousel{
-		height: 320px;
-		}
-	}
-.carousel {
-	width: 100%;
-	overflow: hidden;
-	position: relative;
-	
-	.carousel_imgs {
-		// 总长度为每一张图片长度*图片数
-		width: @imgNum*100%;
-		// 初始显示第一张图片
-		transform: translate(-@imgWidth);
+    .carouselSm {
+        height: 320px;
+    }
+}
 
-		li {
-			float: left;
-			width: @imgWidth;
+.carouselSm {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    .carousel_imgs {
+        // 总长度为每一张图片长度*图片数
+        width: @imgNum*100%;
+        // 初始显示第一张图片
+        transform: translate(-@imgWidth);
+        li {
+            float: left;
+            width: @imgWidth;
+            a {
+                display: block;
+                width: 100%;
+                img {
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    // 索引图里的索引标签
+    .carousel_index {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        margin-left: -50px;
+        li {
+            float: left;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            border: 1px solid white;
+            margin-left: 5px;
+            &.current {
+                background-color: white;
+            }
+        }
+    }
+}
 
-			a{
-				display: block;
-				width: 100%;
-
-				img {
-					display: block;
-					width: 100%;
-				}
-			}
-		}
-	}
-	// 索引图里的索引标签
-	.carousel_index {
-		position: absolute;
-		bottom: 10px;
-		left: 50%;
-		margin-left: -50px;
-
-		li {
-			float: left;
-			width: 5px;
-			height: 5px;
-			border-radius: 50%;
-			border: 1px solid white;
-			margin-left: 5px;
-
-			&.current {
-				background-color: white;
-			}
-		}
-	}
+.pc_carousel_img {
+    height: 300px;
+    /* 为了让中间的内容个保留 多余的部分 被自动切割 */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    &.image_1 {
+        background-image: url('../images/carousel_1.jpg');
+    }
+    &.image_2 {
+        background-image: url('../images/carousel_2.jpg');
+    }
+    &.image_3 {
+        background-image: url('../images/carousel_3.jpg');
+    }
+    &.image_4 {
+        background-image: url('../images/carousel_4.jpg');
+    }
+    &.image_5 {
+        background-image: url('../images/carousel_5.jpg');
+    }
 }

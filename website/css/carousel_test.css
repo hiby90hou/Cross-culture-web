@@ -1,41 +1,41 @@
 @media (max-width: 768px) {
-  .carousel {
+  .carouselSm {
     height: 180px;
   }
 }
 @media (min-width: 768px) {
-  .carousel {
+  .carouselSm {
     height: 320px;
   }
 }
-.carousel {
+.carouselSm {
   width: 100%;
   overflow: hidden;
   position: relative;
 }
-.carousel .carousel_imgs {
+.carouselSm .carousel_imgs {
   width: 700%;
   transform: translate(-14.28571429%);
 }
-.carousel .carousel_imgs li {
+.carouselSm .carousel_imgs li {
   float: left;
   width: 14.28571429%;
 }
-.carousel .carousel_imgs li a {
+.carouselSm .carousel_imgs li a {
   display: block;
   width: 100%;
 }
-.carousel .carousel_imgs li a img {
+.carouselSm .carousel_imgs li a img {
   display: block;
   width: 100%;
 }
-.carousel .carousel_index {
+.carouselSm .carousel_index {
   position: absolute;
   bottom: 10px;
   left: 50%;
   margin-left: -50px;
 }
-.carousel .carousel_index li {
+.carouselSm .carousel_index li {
   float: left;
   width: 5px;
   height: 5px;
@@ -43,6 +43,29 @@
   border: 1px solid white;
   margin-left: 5px;
 }
-.carousel .carousel_index li.current {
+.carouselSm .carousel_index li.current {
   background-color: white;
+}
+.pc_carousel_img {
+  height: 300px;
+  /* 为了让中间的内容个保留 多余的部分 被自动切割 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+}
+.pc_carousel_img.image_1 {
+  background-image: url('../images/carousel_1.jpg');
+}
+.pc_carousel_img.image_2 {
+  background-image: url('../images/carousel_2.jpg');
+}
+.pc_carousel_img.image_3 {
+  background-image: url('../images/carousel_3.jpg');
+}
+.pc_carousel_img.image_4 {
+  background-image: url('../images/carousel_4.jpg');
+}
+.pc_carousel_img.image_5 {
+  background-image: url('../images/carousel_5.jpg');
 }
