@@ -3,17 +3,23 @@
 @light-blue:#81c2d6;
 @light-green:#83fcd4;
 @dark-blue:#0a1030;
-@facebook-blue:#8b9dc3;
+@facebook-blue:#3b5998;
 
 @font-l:55px;
 @font-m:26px;
 @font-s:20px;
 @font-ss:16px;
 
-
+// @font-l:55*3/4/12em;
+// @font-m:26*3/4/12em;
+// @font-s:20*3/4/12em;
+// @font-ss:16*3/4/12em;
 
 *{
 	font-family: 'Open Sans', sans-serif;
+}
+.white_bg{
+	background-color: white;
 }
 /*navbar*/
 .my-navbar {
@@ -290,14 +296,46 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 /* introduction */
 
 @media (min-width: 767px){
-	.introduction h2{
+	.introduction h2, .English_class h2{
 		font-size: @font-l;
 	}
 }
+.introduction_pic_box{
+	width: 100%;
+	height: 200px;
+	overflow:hidden;
+
+	img{
+		width: 100%;
+	    height: auto;
+	    display:block;
+		position:fixed;
+		z-index: -1;
+		left:0;
+		top:0;
+	}
+}
+
+@media (max-width: 768px){
+		.introduction_pic_box{
+		width: 100%;
+		padding:0;
+		height:auto;
+		img{
+			width: 100%;
+	    	height: auto;
+	    	position: relative;
+		} 
+
+	}
+}
+
 .introduction{
-	background-color: rgba(0,0,0,0);
+	background-color: rgba(255,255,255,1);
 	text-align: center;
 	padding: 10px;
+	padding-bottom: 30px;
+	margin:0px;
 	h2{
 		margin-bottom: 20px;
 		// font-size: @font-l;
@@ -315,6 +353,7 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 
 .about_Crossculture, .about_event{
 	text-align: center;
+	margin-bottom: 0;
 
 	&>h1{
 		margin-bottom: 0px;
@@ -376,15 +415,16 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 /*about event*/
 .about_event{
 	background-color: #ccc;
-	padding:20px;
+	padding:20px 0;
+	margin:0;
 
-	h2 + div{
-		margin-top: 30px;
-		width: 100%;
-		height: 300px;
-		background-color: #898989;
+	// h2 + div{
+	// 	margin-top: 30px;
+	// 	width: 100%;
+	// 	height: 300px;
+	// 	background-color: #898989;
 
-	}
+	// }
 }
 
 /* who can join us*/
@@ -492,10 +532,32 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 	background-color: @facebook-blue;
 	width: 100%;
 	height: 200px;
+	padding-top: 30px;
+
+
 }
+
 
 .footer{
 	background-color: @dark-blue;
 	width: 100%;
-	height: 200px;
+	height: 400px;
+}
+
+.English_class{
+	text-align: center;
+	padding-top: 10px;
+	margin-bottom: 0px;
+	h2{
+		margin-bottom: 20px;
+		// font-size: @font-l;
+		font-weight: 500;
+	}
+	p{
+		padding: 0px;
+		font-size: @font-m;
+		font-weight: 500;
+		max-width: 1000px;
+		margin:0 auto;
+	}
 }

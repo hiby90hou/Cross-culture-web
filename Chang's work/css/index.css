@@ -1,6 +1,9 @@
 * {
   font-family: 'Open Sans', sans-serif;
 }
+.white_bg {
+  background-color: white;
+}
 /*navbar*/
 .my-navbar {
   background-color: #f8f8f8;
@@ -261,14 +264,43 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 }
 /* introduction */
 @media (min-width: 767px) {
-  .introduction h2 {
+  .introduction h2,
+  .English_class h2 {
     font-size: 55px;
   }
 }
+.introduction_pic_box {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.introduction_pic_box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+@media (max-width: 768px) {
+  .introduction_pic_box {
+    width: 100%;
+    padding: 0;
+    height: auto;
+  }
+  .introduction_pic_box img {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+}
 .introduction {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #ffffff;
   text-align: center;
   padding: 10px;
+  padding-bottom: 30px;
+  margin: 0px;
 }
 .introduction h2 {
   margin-bottom: 20px;
@@ -284,6 +316,7 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 .about_Crossculture,
 .about_event {
   text-align: center;
+  margin-bottom: 0;
 }
 .about_Crossculture > h1,
 .about_event > h1 {
@@ -344,13 +377,8 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 /*about event*/
 .about_event {
   background-color: #ccc;
-  padding: 20px;
-}
-.about_event h2 + div {
-  margin-top: 30px;
-  width: 100%;
-  height: 300px;
-  background-color: #898989;
+  padding: 20px 0;
+  margin: 0;
 }
 /* who can join us*/
 .join_us {
@@ -453,12 +481,29 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 }
 /* facebook */
 .facebook_box {
-  background-color: #8b9dc3;
+  background-color: #3b5998;
   width: 100%;
   height: 200px;
+  padding-top: 30px;
 }
 .footer {
   background-color: #0a1030;
   width: 100%;
-  height: 200px;
+  height: 400px;
+}
+.English_class {
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 0px;
+}
+.English_class h2 {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.English_class p {
+  padding: 0px;
+  font-size: 26px;
+  font-weight: 500;
+  max-width: 1000px;
+  margin: 0 auto;
 }
