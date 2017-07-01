@@ -6,7 +6,7 @@ function carousel() {
     var carousel = document.querySelector('.carousel_imgs');
     // console.log(carousel);
     var indexLiArr = document.querySelectorAll('.carousel_index li');
-    var width = $('body').width();
+    var width = document.querySelector('.carouselSm').offsetWidth;
     var imgNum = 7;
 
     transitionOn();
