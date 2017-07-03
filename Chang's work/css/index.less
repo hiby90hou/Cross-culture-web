@@ -577,14 +577,16 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 }
 
 .footer_link{
-	width: 60%;
-	height: 30px;
+	width: 65%;
+	// height: 30px;
 	
 	// background-color: pink;
 	margin: 0 auto;
 	margin-top: 10px;
-	&>div>div{
-		padding:0;
+	&>div{
+		padding-right: 10px;
+		padding-left: 6px;
+		display: inline-block;
 		border-right: 1px solid #eee;
 		&:nth-child(4){
 			border: none;
@@ -592,19 +594,19 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 	}
 	a {
 		color:white;
-		text-align: center;
 		font-size: 16px;
 	}
 }
 
 @media (max-width: 768px) {
-	.footer_link>div>div {
+	.footer_link>div {
 		border: none;
+		display: block;
 	}
 }
 
 .footer_policy {
-		height: 20px;
+	height: 20px;
 	display: block;
 	a {
 		color:white;
