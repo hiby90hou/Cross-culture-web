@@ -514,3 +514,39 @@ fieldset[disabled] .my-navbar .btn-link:focus {
   max-width: 1000px;
   margin: 0 auto;
 }
+.footer_fb {
+  width: 70%;
+  margin: 0 auto;
+  border-bottom: 1px solid #fff;
+}
+.footer_link {
+  width: 60%;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.footer_link > div > div {
+  padding: 0;
+  border-right: 1px solid #eee;
+}
+.footer_link > div > div:nth-child(4) {
+  border: none;
+}
+.footer_link a {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  .footer_link > div > div {
+    border: none;
+  }
+}
+.footer_policy {
+  height: 20px;
+  display: block;
+}
+.footer_policy a {
+  color: white;
+  text-align: center;
+}
