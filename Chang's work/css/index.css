@@ -487,9 +487,16 @@ fieldset[disabled] .my-navbar .btn-link:focus {
   padding-top: 30px;
 }
 .footer {
-  background-color: #0a1030;
+  background-color: #8b8d97;
   width: 100%;
   height: 400px;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+}
+.footer p {
+  max-width: 1000px;
+  display: inline-block;
 }
 .English_class {
   text-align: center;
