@@ -1,0 +1,33 @@
+/*
+Theme Name: Cross-culture
+Theme URI: 
+Description: 
+Author: Haofu & Chang
+Author URI:
+Version: 1.0
+Tags: responsive, white, bootstrap
+
+This simple theme was built using the example Bootstrap theme "Basic marketing site" found on the Bootstrap web site http://twitter.github.com/bootstrap/examples/hero.html
+*/
+
+/*    <!-- Bootstrap -->
+    <link href="lib/css/bootstrap.min.css" rel="stylesheet">
+    <!-- delete default setting -->
+    <link href="css/base.css" rel="stylesheet">
+    <!-- my own css setting -->
+    <link href="css/index.css" rel="stylesheet">
+    <!-- carousel -->
+    <link rel="stylesheet" href="css/carousel_test.css"> */
+
+@import url('lib/css/bootstrap.min.css'); 
+@import url('css/base.css'); 
+@import url('css/index.css'); 
+@import url('css/carousel_test.css'); 
+
+/* <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="lib/js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="lib/js/bootstrap.min.js"></script>
+<!-- carousel -->
+<script src="js/carousel.js"></script>
+ */
