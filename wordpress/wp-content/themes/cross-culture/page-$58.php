@@ -3,8 +3,8 @@
 * Template Name:english class
 *
 * @package WordPress
-* @subpackage Twenty_Fourteen
-* @since Twenty Fourteen 1.0
+* @subpackage Crosscultures
+* @since Crosscultures 1.0
 */ 
 ?>
 	<?php get_header();?>
@@ -20,7 +20,7 @@
 		
 		<!-- <?php get_sidebar();?> -->
 	
-		<div id="main">		
+		<div id="main" class="mainNoSide">		
 			<?php if (have_posts()) : ?>
 			<?php while (have_posts()) : the_post(); ?>
 			<div class="post">

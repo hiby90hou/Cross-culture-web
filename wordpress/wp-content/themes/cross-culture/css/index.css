@@ -17,6 +17,9 @@
   width: auto;
   margin-top: -7px;
 }
+.my-navbar .navbar-collapse {
+  max-height: 394px;
+}
 .my-navbar .navbar-brand:hover,
 .my-navbar .navbar-brand:focus {
   color: #5e5e5e;
@@ -270,16 +273,20 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 /* introduction */
 @media (min-width: 767px) {
   .introduction h2,
-  .English_class h2 {
+  .English_class h2,
+  .get_involved h2 {
     font-size: 55px;
   }
 }
-.introduction_pic_box {
+.introduction_pic_box,
+.introduction_pic_box2 {
   width: 100%;
   height: 200px;
   overflow: hidden;
+  background-image: none;
 }
-.introduction_pic_box img {
+.introduction_pic_box img,
+.introduction_pic_box2 img {
   width: 100%;
   height: auto;
   display: block;
@@ -287,6 +294,16 @@ fieldset[disabled] .my-navbar .btn-link:focus {
   z-index: -1;
   left: 0;
   top: 0;
+}
+.introduction_pic_box2 {
+  height: 100px;
+}
+@media (max-width: 768px) {
+  .introduction_pic_box2 {
+    background-image: url("../images/meeting.jpg");
+    background-position: center;
+    background-size: cover;
+  }
 }
 @media (max-width: 768px) {
   .introduction_pic_box {
@@ -460,7 +477,7 @@ fieldset[disabled] .my-navbar .btn-link:focus {
   transform: translate(-50%, -50%);
   font-size: 16px;
   font-weight: 500;
-  line-height: 26px;
+  line-height: auto;
 }
 .join_us .origin_point .circle3 p span,
 .join_us .origin_point .circle4 p span,
@@ -484,6 +501,14 @@ fieldset[disabled] .my-navbar .btn-link:focus {
   transform: rotate(300deg) translateX(-147%) rotate(-300deg);
   background-color: #83fcd4;
 }
+@media (max-width: 768px) {
+  .circle3 p,
+  .circle4 p,
+  .circle5 p,
+  .circle6 p {
+    line-height: 16px;
+  }
+}
 /* facebook */
 .facebook_box {
   background-color: #3b5998;
@@ -494,7 +519,7 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 .footer {
   background-color: #8b8d97;
   width: 100%;
-  height: 300px;
+  height: 400px;
   color: white;
   text-align: center;
   padding-top: 30px;
@@ -518,6 +543,35 @@ fieldset[disabled] .my-navbar .btn-link:focus {
   font-weight: 500;
   max-width: 1000px;
   margin: 0 auto;
+}
+.get_involved {
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 0px;
+}
+.get_involved h2 {
+  margin-bottom: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+.get_involved p,
+.get_involved .row {
+  padding: 0px;
+  font-size: 26px;
+  font-weight: 500;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.get_involved .col-md-4 {
+  text-align: center;
+}
+.get_involved .col-md-4 img {
+  max-width: 200px;
+  display: inline-block;
+}
+.get_involved span {
+  font-size: 20px;
 }
 .footer_fb {
   width: 70%;
@@ -609,11 +663,12 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 }
 #sidebar ul.sidemenu a {
   display: block;
+  overflow: hidden;
   font-weight: normal;
   color: #333;
   height: 1.5em;
   padding: .3em 0 .3em 15px;
-  line-height: 1.5em;
+  line-height: 1em;
   border-bottom: 1px dashed #D4D4D4;
   text-decoration: none;
 }
@@ -627,15 +682,15 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 }
 /* main */
 #main {
-  float: left;
-  width: 100%;
   margin: 0;
   padding: 0;
   padding-bottom: 10%;
 }
 @media (min-width: 767px) {
+  .mainNoSide {
+    width: 100%;
+  }
   .mainHasSide {
-    float: left;
     width: 68%;
   }
 }
@@ -683,4 +738,89 @@ fieldset[disabled] .my-navbar .btn-link:focus {
   margin: 0 auto;
   max-width: 1000px;
   width: 100%;
+}
+/* for Our events*/
+.cff-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+.cff-wrapper .cff-author-img img {
+  position: relative;
+  top: -50px;
+}
+.cff-author-text {
+  position: relative;
+  left: 50px;
+}
+.cff-author a:hover {
+  text-decoration: none;
+}
+.cff-page-name {
+  background-color: white;
+  font-size: 26px;
+}
+.cff-author-img img {
+  width: auto;
+}
+.cff-text,
+.cff-info {
+  background-color: white;
+  font-size: 26px;
+  color: #222;
+}
+.cff-details {
+  background-color: white;
+  font-size: 26px;
+  font-weight: 400;
+  text-align: center;
+}
+.cff-details p:first-child {
+  font-size: 26px;
+  font-weight: 600;
+}
+.pic_modify {
+  max-width: 100%;
+}
+/*contact us*/
+#map {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+#location {
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 20px;
+}
+#location a {
+  text-decoration: none;
+  color: white;
+}
+.googlemap {
+  width: 100%;
+  height: 100%;
+}
+.transBox {
+  width: 168px;
+  position: absolute;
+  right: 0;
+  top: 55px;
+  z-index: 2;
+}
+/*comment box*/
+#author,
+#email,
+#url,
+#comment {
+  border: 1px solid #ccc;
+}
+#comment {
+  width: 100%;
+}
+#submit {
+  padding: 5px;
+  border-radius: 3px;
+  transform: translateX(50%);
 }

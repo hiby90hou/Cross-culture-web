@@ -1507,6 +1507,13 @@ function display_cff($atts) {
                     if($cff_show_author) $cff_post_item .= $cff_author;
                     //DATE ABOVE
                     if ($cff_show_date && $cff_date_position == 'above') $cff_post_item .= $cff_date;
+                    // IMAGE
+                    // if (!empty($news->picture) && !empty($news->object_id)) {
+                    //     $object_id = $news->object_id;
+                    //     $picture = 'https://graph.facebook.com/'.$object_id.'/picture?type=normal&width=100&height=100';
+                    //     $cff_post_item .= '<img src="'.$picture.'" alt="" class="img-responsive" />';
+                    // }
+
                     //POST TEXT
                     if($cff_show_text) $cff_post_item .= $cff_post_text;
                     
@@ -1519,8 +1526,15 @@ function display_cff($atts) {
                         if($cff_show_date && $cff_post_type !== 'event') $cff_post_item .= $cff_date;
                     }
                     //add photos
-                    $photo = $news->picture;
+                    // $photo = $news->picture;
                     $content .= "<img src='{$photo}'/>"; 
+
+                    $photo = 'https://graph.facebook.com/'.$news->object_id.'/picture?access_token=' . $access_token;
+                    if($news->link){
+                        $cff_post_item .= "<a href='{$news->link}' target='_blank'><img class='pic_modify' src='{$photo}'></a>"; 
+                    }else{
+                        $cff_post_item .= "<img src='{$photo}'/>"; 
+                    }
 
                     //EVENT
                     if($cff_show_event_title || $cff_show_event_details) $cff_post_item .= $cff_event;

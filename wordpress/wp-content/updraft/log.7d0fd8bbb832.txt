@@ -1,0 +1,142 @@
+0000.000 (0) Opened log file at time: Thu, 06 Jul 2017 12:45:55 +0000 on http://192.168.1.3/wordpress
+0000.009 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.13.4 WP: 4.8 PHP: 7.0.18 (apache2handler, Windows NT 2V03HD6S01NCR63 6.1 build 7601 (Windows 7 Ultimate Edition Service Pack 1) i586) MySQL: 5.5.5 WPLANG: en_US Server: Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.0.18 safe_mode: 0 max_execution_time: 900 memory_limit: 1G (used: 20.1M | 4M) multisite: N openssl: OpenSSL 1.0.2k  26 Jan 2017 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.028 (0) Free space on disk containing Updraft's temporary directory: 154543 MB
+0000.033 (0) Tasks: Backup files: 1 (schedule: unset) Backup DB: 1 (schedule: unset)
+0000.038 (0) Semaphore (fd, wp_options) being initialised
+0000.052 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.078 (0) Set semaphore last lock (fd) time to 2017-07-06 12:45:55
+0000.081 (0) Semaphore lock (fd) complete
+0000.095 (0) Backup run: resumption=0, nonce=7d0fd8bbb832, begun at=1499345155 (0s ago), job type=backup
+0000.112 (0) Scheduling a resumption (1) after 300 seconds (1499345455) in case this run gets aborted
+0000.128 (0) Checking if we have a zip executable available
+0000.139 (0) Creation of backups of directories: beginning
+0000.171 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.469 (0) Total entities for the zip file: 265 directories, 1784 files (0 skipped as non-modified), 25.1 MB
+0000.493 (0) Zip: backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.543 (0) Zip: backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.610 (0) Zip: backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.643 (0) Zip: backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.674 (0) Zip: backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.674 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (4.3 MB, 1784 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0000.981 (0) Zip: backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-plugins.zip.tmp: 600 files added (on-disk size: 2462.4 KB)
+0001.012 (0) Zip: backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-plugins.zip.tmp: 700 files added (on-disk size: 2462.4 KB)
+0001.043 (0) Zip: backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-plugins.zip.tmp: 800 files added (on-disk size: 2462.4 KB)
+0001.075 (0) Zip: backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-plugins.zip.tmp: 900 files added (on-disk size: 2462.4 KB)
+0001.106 (0) Zip: backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-plugins.zip.tmp: 1000 files added (on-disk size: 2462.4 KB)
+0001.106 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (18 MB, 1784 files batched, 501 (1002) added so far); re-opening (prior size: 2462.4 KB)
+0002.927 (0) Zip: backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-plugins.zip.tmp: 1100 files added (on-disk size: 7821.2 KB)
+0002.959 (0) Zip: backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-plugins.zip.tmp: 1200 files added (on-disk size: 7821.2 KB)
+0002.990 (0) Zip: backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-plugins.zip.tmp: 1300 files added (on-disk size: 7821.2 KB)
+0003.021 (0) Zip: backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-plugins.zip.tmp: 1400 files added (on-disk size: 7821.2 KB)
+0003.052 (0) Zip: backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-plugins.zip.tmp: 1500 files added (on-disk size: 7821.2 KB)
+0003.068 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.1 MB, 1784 files batched, 501 (1503) added so far); re-opening (prior size: 7821.2 KB)
+0003.307 (0) Zip: backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-plugins.zip.tmp: 1600 files added (on-disk size: 8543 KB)
+0003.338 (0) Zip: backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-plugins.zip.tmp: 1700 files added (on-disk size: 8543 KB)
+0003.572 (0) Created plugins zip (0) - 8834.1 KB in 3.4 s (2606.3 KB/s) (sha1: a70afc423e14630e4baa2a9b7378adf93f9620cd, sha256: 0770f41e784e4ee4a80c74f9f882a989846c86bc7c0a981cb01b0c53db1be915)
+0003.588 (0) Beginning creation of dump of themes (split every: 400 MB)
+0003.604 (0) Total entities for the zip file: 11 directories, 58 files (0 skipped as non-modified), 6 MB
+0003.619 (0) Zip: setCompressionName failed on: themes/cross-culture/images/banner - ¸±±¾.jpg
+0003.869 (0) Created themes zip (0) - 4565.1 KB in 0.3 s (16257.3 KB/s) (sha1: ef631c140281acacf6089e677b21beb1a65949a1, sha256: b2b5920a6fe0ee59ea629117a517bb9f9c9c11d0be15a8a39171b2f10ad1959e)
+0003.869 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0003.884 (0) Looking for candidates to back up in: D:\xampp\htdocs\wordpress/wp-content/uploads
+0003.884 (0) finding files: 2017: adding to list (1)
+0003.884 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0003.900 (0) Total entities for the zip file: 3 directories, 24 files (0 skipped as non-modified), 2.2 MB
+0003.947 (0) Created uploads zip (0) - 2220.8 KB in 0.1 s (35590.2 KB/s) (sha1: 51b3b3260d7efeca0d6e9855e1986bd216d93e74, sha256: acd8007b3badca10db16692eddd4ce290b7b1c9ae1ee845c3e06feb1d8e5fc40)
+0003.962 (0) Beginning backup of other directories found in the content directory (index: 0)
+0003.962 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0003.962 (0) Looking for candidates to back up in: D:\xampp\htdocs\wordpress/wp-content
+0003.962 (0) finding files: index.php: adding to list (1)
+0003.978 (0) finding files: languages: adding to list (2)
+0003.978 (0) finding files: plugins: skipping: this is the plugins directory
+0003.978 (0) finding files: themes: skipping: this is the themes directory
+0004.025 (0) finding files: updraft: skipping: this is the updraft directory
+0004.025 (0) finding files: upgrade: skipping: excluded by options
+0004.025 (0) finding files: uploads: skipping: this is the uploads directory
+0004.040 (0) finding files: wp-content.rar: adding to list (3)
+0004.072 (0) Total entities for the zip file: 3 directories, 41 files (0 skipped as non-modified), 17.8 MB
+0004.751 (0) Created others zip (0) - 15859.7 KB in 0.7 s (22311.7 KB/s) (sha1: e2165d8857995758e8a078ed3e16b78d0ccd545e, sha256: 05134868e84a9f02a7542e5552023095d9736ede8c828a647185538c38a20389)
+0004.767 (0) Saving backup status to database (elements: 8)
+0004.783 (0) Beginning creation of database dump (WordPress DB)
+0004.829 (0) Table wp_options: Total expected rows (approximate): 244
+0004.892 (0) Table wp_options: Total rows added: 247 in 0.06 seconds
+0004.907 (0) Table wp_options: finishing file (backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-db-table-wp_options.table.gz - 256.2 KB)
+0004.923 (0) Table wp_users: Total expected rows (approximate): 0
+0004.923 (0) Table wp_users: Total rows added: 1 in 0.00 seconds
+0004.923 (0) Table wp_users: finishing file (backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-db-table-wp_users.table.gz - 0.5 KB)
+0004.939 (0) Table wp_usermeta: Total expected rows (approximate): 24
+0004.954 (0) Table wp_usermeta: Total rows added: 24 in 0.02 seconds
+0004.954 (0) Table wp_usermeta: finishing file (backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-db-table-wp_usermeta.table.gz - 1.9 KB)
+0004.970 (0) Table wp_commentmeta: Total expected rows (approximate): 0
+0004.985 (0) Table wp_commentmeta: Total rows added: 0 in 0.00 seconds
+0004.985 (0) Table wp_commentmeta: finishing file (backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-db-table-wp_commentmeta.table.gz - 0.4 KB)
+0005.001 (0) Table wp_comments: Total expected rows (approximate): 0
+0005.001 (0) Table wp_comments: Total rows added: 1 in 0.00 seconds
+0005.017 (0) Table wp_comments: finishing file (backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-db-table-wp_comments.table.gz - 0.8 KB)
+0005.032 (0) Table wp_links: Total expected rows (approximate): 0
+0005.032 (0) Table wp_links: Total rows added: 0 in 0.00 seconds
+0005.032 (0) Table wp_links: finishing file (backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-db-table-wp_links.table.gz - 0.4 KB)
+0005.048 (0) Table wp_postmeta: Total expected rows (approximate): 118
+0005.063 (0) Table wp_postmeta: Total rows added: 120 in 0.00 seconds
+0005.063 (0) Table wp_postmeta: finishing file (backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-db-table-wp_postmeta.table.gz - 2 KB)
+0005.085 (0) Table wp_posts: Total expected rows (approximate): 146
+0005.103 (0) Table wp_posts: Total rows added: 147 in 0.02 seconds
+0005.103 (0) Table wp_posts: finishing file (backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-db-table-wp_posts.table.gz - 19.7 KB)
+0005.119 (0) Table wp_term_relationships: Total expected rows (approximate): 55
+0005.134 (0) Table wp_term_relationships: Total rows added: 55 in 0.02 seconds
+0005.134 (0) Table wp_term_relationships: finishing file (backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-db-table-wp_term_relationships.table.gz - 0.5 KB)
+0005.150 (0) Table wp_term_taxonomy: Total expected rows (approximate): 17
+0005.150 (0) Table wp_term_taxonomy: Total rows added: 19 in 0.00 seconds
+0005.165 (0) Table wp_term_taxonomy: finishing file (backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-db-table-wp_term_taxonomy.table.gz - 0.7 KB)
+0005.165 (0) Table wp_termmeta: Total expected rows (approximate): 0
+0005.181 (0) Table wp_termmeta: Total rows added: 0 in 0.00 seconds
+0005.181 (0) Table wp_termmeta: finishing file (backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-db-table-wp_termmeta.table.gz - 0.4 KB)
+0005.197 (0) Table wp_terms: Total expected rows (approximate): 18
+0005.197 (0) Table wp_terms: Total rows added: 19 in 0.00 seconds
+0005.212 (0) Table wp_terms: finishing file (backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-db-table-wp_terms.table.gz - 0.7 KB)
+0005.212 (0) backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-db-table-wp_options.table.gz (1/12): adding to final database dump
+0005.275 (0) backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-db-table-wp_users.table.gz (2/12): adding to final database dump
+0005.275 (0) backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-db-table-wp_usermeta.table.gz (3/12): adding to final database dump
+0005.275 (0) backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-db-table-wp_commentmeta.table.gz (4/12): adding to final database dump
+0005.275 (0) backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-db-table-wp_comments.table.gz (5/12): adding to final database dump
+0005.290 (0) backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-db-table-wp_links.table.gz (6/12): adding to final database dump
+0005.290 (0) backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-db-table-wp_postmeta.table.gz (7/12): adding to final database dump
+0005.290 (0) backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-db-table-wp_posts.table.gz (8/12): adding to final database dump
+0005.306 (0) backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-db-table-wp_term_relationships.table.gz (9/12): adding to final database dump
+0005.306 (0) backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-db-table-wp_term_taxonomy.table.gz (10/12): adding to final database dump
+0005.306 (0) backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-db-table-wp_termmeta.table.gz (11/12): adding to final database dump
+0005.306 (0) backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-db-table-wp_terms.table.gz (12/12): adding to final database dump
+0005.306 (0) backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-db.gz: finished writing out complete database file (256 KB)
+0005.337 (0) Total database tables backed up: 12 (backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-db.gz, size: 288318, sha256)
+0005.353 (0) backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0005.353 (0) backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0005.353 (0) backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0005.353 (0) backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-others.zip: others: This file has not yet been successfully uploaded: will queue
+0005.353 (0) backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-db.gz: db: This file has not yet been successfully uploaded: will queue
+0005.353 (0) Saving backup history. Total backup size: 31 MB
+0005.368 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0005.384 (0) Cloud backup selection (1/1): none (last)
+0005.384 (0) No remote despatch: user chose no remote backup service
+0005.384 (0) Recording as successfully uploaded: backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-plugins.zip (4e2070fe521c3988b2558377cdbe2b1b)
+0005.399 (0) Recording as successfully uploaded: backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-themes.zip (bd0d9cb4910873255f7c2f1838902823)
+0005.415 (0) Recording as successfully uploaded: backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-uploads.zip (a43aff2bdef16a1df3acebe2b506ce01)
+0005.431 (0) Recording as successfully uploaded: backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-others.zip (fb1e4fe3053eae68a9603324ab686344)
+0005.446 (0) Recording as successfully uploaded: backup_2017-07-06-2045_Crosscultures_Christian_Club_7d0fd8bbb832-db.gz (66e96c46190f0b82f0fcf96a9abd1943)
+0005.446 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0005.462 (0) Number of backup sets in history: 1; groups (db): 1
+0005.462 (0) Examining (for databases) backup set with group_id=0, nonce=7d0fd8bbb832, datestamp=1499345155 (Jul 06 2017 12:45:55)
+0005.462 (0) This backup set is the backup set just made, so will not be deleted.
+0005.462 (0) Number of backup sets in history: 1; groups (files): 1
+0005.462 (0) Examining (for files) backup set with nonce=7d0fd8bbb832, datestamp=1499345155 (Jul 06 2017 12:45:55)
+0005.477 (0) This backup set is the backup set just made, so will not be deleted.
+0005.477 (0) This backup set is the backup set just made, so will not be deleted.
+0005.477 (0) This backup set is the backup set just made, so will not be deleted.
+0005.477 (0) This backup set is the backup set just made, so will not be deleted.
+0005.477 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0005.477 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0005.477 (0) Resume backup (7d0fd8bbb832, 0): finish run
+0005.493 (0) Decremented the semaphore (fd) by 1
+0005.493 (0) Semaphore (fd) unlocked
+0005.509 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0005.509 (0) No email will/can be sent - the user has not configured an email address.
+0005.509 (0) The backup apparently succeeded and is now complete

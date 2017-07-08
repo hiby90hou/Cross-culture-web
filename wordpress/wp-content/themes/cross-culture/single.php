@@ -1,15 +1,17 @@
 	<?php get_header();?>
-	<div class="blank_head_box"></div>	
+	<div class="blank_head_box">
+    	<h1><a href="<?php the_permalink() ?>"><?php $category = get_the_category(); echo $category[0]->cat_name;?></a></h1>
+	</div>	
 	<div class="headerphoto"></div>
 			
 	<!-- content-wrap starts here -->
-	<div id="content-wrap container-fluid">
+	<div id="content-wrap">
 	<div class="banner_blog"></div>
 	<div id="content" class="clearfix">		
 		
-		<!-- <?php get_sidebar();?> -->
+		<?php get_sidebar();?>
 	
-		<div id="main">		
+		<div id="main" class="mainHasSide">		
 			<?php if (have_posts()) : ?>
 			<?php while (have_posts()) : the_post(); ?>
 			<div class="post">
@@ -22,13 +24,14 @@
 				<p><?php the_content("Read More..."); ?></p>
 				
 				<p class="post-footer align-right">					
-					<a href="<?php the_permalink() ?>" class="readmore">更多</a>
+					<a href="<?php the_permalink() ?>" class="readmore">more...</a>
 					<?php comments_number('No Comment', '1 Comment', '% Comments' );?>
 					<span class="date"><?php the_time('F d, Y') ?></span>	
 				</p>
-				
+				<?php comments_template(); ?>
 			</div>
 			<?php endwhile; ?>
+			
 			<?php else : ?>
 			<?php endif; ?>
 

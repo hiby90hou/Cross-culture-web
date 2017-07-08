@@ -8,13 +8,14 @@
             <iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fcrosscultures.melbourne%2F&width=80&height=65&layout=button&size=large&show_faces=false&appId" width="80" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
         </div>
         <div class='footer_link'>
-            <div><a href="">ABOUT US</a></div>
-            <div><a href="">CONTACT US</a></div>
-            <div><a href="">PARTNER SITES</a></div>
-            <div><a href="">USEFUL LINKS</a></div>   
+            <div><a href="<?php echo get_option('home'); ?>/about-us/">ABOUT US</a></div>
+            <div><a href="<?php echo get_option('home'); ?>/contact-us/">CONTACT US</a></div>
+            <div><a href="<?php echo get_option('home'); ?>/partner-sites/">PARTNER SITES</a></div>
+            <div><a href="<?php echo get_option('home'); ?>/useful-websites/">USEFUL LINKS</a></div>   
         </div>
         <div class='footer_policy'><a href="">Privacy Policy</a></div>
     </div>
+    <img src="<?php echo get_template_directory_uri();?>/images/crossculture-logo.png" class="img-responsive" style="display:none">
 </body>
 
 </html>
@@ -23,5 +24,9 @@
 <script src="<?php echo get_template_directory_uri();?>/lib/js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="<?php echo get_template_directory_uri();?>/lib/js/bootstrap.min.js"></script>
-<!-- carousel -->
-<!-- <script src="<?php echo get_template_directory_uri();?>/js/carousel.js"></script> -->
+<script>
+    $("img")
+  .error(function(){
+    $(this).hide();
+  })
+</script>

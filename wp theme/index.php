@@ -273,7 +273,7 @@
         </div>
     </div>
     <!-- who can join us -->
-    <div class="container-fluid  join_us hidden-xs  white_bg">
+    <div class="container-fluid  join_us white_bg">
         <div class="origin_point">
             <div class="circle1 img-circle">
                 <p>

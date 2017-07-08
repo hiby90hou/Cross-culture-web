@@ -36,6 +36,9 @@
   	margin-top: -7px;
   }
 }
+.my-navbar .navbar-collapse{
+	max-height: 394px;
+}
 .my-navbar .navbar-brand:hover,
 .my-navbar .navbar-brand:focus {
   color: #5e5e5e;
@@ -303,14 +306,15 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 /* introduction */
 
 @media (min-width: 767px){
-	.introduction h2, .English_class h2{
+	.introduction h2, .English_class h2, .get_involved h2{
 		font-size: @font-l;
 	}
 }
-.introduction_pic_box{
+.introduction_pic_box, .introduction_pic_box2{
 	width: 100%;
 	height: 200px;
 	overflow:hidden;
+	background-image:none;
 
 	img{
 		width: 100%;
@@ -320,6 +324,17 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 		z-index: -1;
 		left:0;
 		top:0;
+	}
+}
+.introduction_pic_box2{
+		height: 100px;
+}
+@media (max-width: 768px){
+	.introduction_pic_box2{
+		background-image: url("../images/meeting.jpg");
+		background-position: center;
+		background-size: cover;
+		
 	}
 }
 
@@ -332,7 +347,7 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 			width: 100%;
 	    	height: auto;
 	    	position: relative;
-		} 
+		}
 
 	}
 }
@@ -507,7 +522,7 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 				transform: translate(-50%,-50%);
 				font-size: @font-ss;
 				font-weight: 500;
-				line-height: 26px;
+				line-height: auto;
 				span{
 	    			font-size: @font-l;
 	  			}
@@ -533,6 +548,12 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 		}
 	}
 }
+@media (max-width: 768px){
+	.circle3, .circle4, .circle5, .circle6{
+		p{line-height: 16px;}
+		
+	}
+}
 
 /* facebook */
 .facebook_box{
@@ -548,7 +569,7 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 .footer{
 	background-color: @dark-blue;
 	width: 100%;
-	height: 300px;
+	height: 400px;
 	color:white;
 	text-align: center;
 	padding-top: 30px;
@@ -574,6 +595,38 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 		max-width: 1000px;
 		margin:0 auto;
 	}
+}
+
+.get_involved{
+	text-align: center;
+	padding-top: 10px;
+	margin-bottom: 0px;
+	h2{
+		margin-bottom: 20px;
+		// font-size: @font-l;
+		font-weight: 500;
+		text-align: center;
+	}
+	p, .row{
+		padding: 0px;
+		font-size: @font-m;
+		font-weight: 500;
+		max-width: 1000px;
+		margin:0 auto;
+		// margin-bottom: 20px;	
+		text-align: center;
+	}
+	.col-md-4{
+		text-align: center;
+		img{
+		max-width: 200px;
+		display:inline-block;
+	}
+	}
+
+	span{
+			font-size: @font-s;
+		}
 }
 
 .footer_fb{
@@ -686,11 +739,12 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 }
 #sidebar ul.sidemenu a {
 	display:block;
+	overflow:hidden;
 	font-weight:normal;
 	color: #333;
 	height: 1.5em;	
 	padding:.3em 0 .3em 15px;
-	line-height: 1.5em;
+	line-height: 1em;
 	border-bottom: 1px dashed #D4D4D4;
 	text-decoration:none;
 }
@@ -705,8 +759,8 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 
 /* main */
 #main {
-	float: left;
-	width: 100%;	
+	// float: left;
+	// width: 100%;	
 	margin: 0; 
 	padding: 0;	
 	padding-bottom: 10%;
@@ -714,8 +768,10 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 }
 
 @media (min-width: 767px) {
+	.mainNoSide {
+		width: 100%;
+	}
 	.mainHasSide {
-	float: left;
 	width: 68%;
 	}	
 	
@@ -765,11 +821,96 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 	width: 100%;
 }
 
-.banner_blog{
-
+/* for Our events*/
+.cff-wrapper{
+	width: 100%;
+	overflow:hidden;
+	.cff-author-img{
+		// text-align: center;
+		img{
+			// float:left;
+			// padding-right:10px;
+			position:relative;
+			top: -50px;
+		}
+	}
+}
+.cff-author-text{
+	position:relative;
+	left:50px;
+}
+.cff-author a:hover{
+		text-decoration: none;
+	}
+.cff-page-name, {
+	background-color: white;
+	font-size:@font-m;
+}
+.cff-author-img img{
+	width:auto;
+}
+.cff-text, .cff-info{
+	background-color: white;
+	font-size:@font-m;
+	color:#222;
+}
+.cff-details{
+	background-color: white;
+	font-size:@font-m;
+	font-weight: 400;
+	text-align: center;
+	p:first-child{
+		font-size:@font-m;
+		font-weight: 600;
+	}
 }
 
-.placeholder{
-	
+.pic_modify{
+	max-width: 100%;
 }
 
+/*contact us*/
+#map {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+#location {
+    // position: absolute;
+    // left: 50%;
+    // top: 5%;
+    text-align: center;
+    position:relative;
+    left:50%;
+    transform:translateX(-50%);
+    margin-bottom: 20px;
+}
+#location a {
+    text-decoration: none;
+    color: white;
+}
+.googlemap {
+    width: 100%;
+    height: 100%;
+}
+
+.transBox{
+	 width:168px;
+	position:absolute;
+	right:0;
+	top:55px;
+	z-index: 2;
+}
+
+/*comment box*/
+#author, #email, #url, #comment{
+	border: 1px solid #ccc;
+}
+#comment{
+	width: 100%;
+}
+#submit{
+	padding:5px;
+	border-radius: 3px;
+	transform:translateX(50%);
+}

@@ -258,7 +258,7 @@
   font-size: 16px;
 }
 #cff.cff-default-styles .cff-details p{
-  font-size: 14px;
+  /* font-size: 14px; */
 }
 #cff .cff-details .cff-info{
   padding: 10px 0 0 0;

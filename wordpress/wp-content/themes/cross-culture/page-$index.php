@@ -1,3 +1,13 @@
+<?php
+/**
+* Template Name:home page
+*
+* @package WordPress
+* @subpackage Crosscultures
+* @since Crosscultures 1.0
+*/ 
+?>
+
     <?php get_header();?>
     <!-- banner -->
     <div class="banner-box">
@@ -11,13 +21,13 @@
         <div class="button_box">
             <div class="row">
                 <div class="col-md-4">
-                    <button type="button" class="btn btn-info">What's on</button>
+                    <button type="button" class="btn btn-info"><a href="<?php echo get_option('home'); ?>/our-events/">What's on</a></button>
                 </div>
                 <div class="col-md-4">
-                    <button type="button" class="btn btn-info">FAQ</button>
+                    <button type="button" class="btn btn-info"><a href="<?php echo get_option('home'); ?>/faq/">FAQ</a></button>
                 </div>
                 <div class="col-md-4">
-                    <button type="button" class="btn btn-info">I am new</button>
+                    <button type="button" class="btn btn-info"><a href="<?php echo get_option('home'); ?>#getInvolvedPic">I am new</a></button>
                 </div>
             </div>
         </div>
@@ -36,7 +46,8 @@
         <div class="container-fluid">
             <h1>Crosscultures Christian Club</h1>
             <h2>Make friends and meet Jesus</h2>
-            <p>We are a mix of Australians and Internationals who are passionate about the relationship we can have with God because Jesus died for us.</br>
+            <p>
+                We are a mix of Australians and Internationals who are passionate about the relationship we can have with God because Jesus died for us.</br>
                 </br>
                 Our main meeting is every Thursday night at 6:00 pm. We also have many other events and activities such as free English class, camps and girls night.
             </p>
@@ -57,7 +68,7 @@
             </p>
             <!--         <p>
         •Time:     every Thursday 6pm</br>
-        •Cost:      dinner is $5 per week </br>
+        •Cost:      dinner is $4 per week </br>
                             (if it is your first time,dinner is free)</br>
         •Place:     ST. JUDE'S ANGLICAN CHURCH</br>
                             2 KEPPEL ST, CARLTON, VIC, 3053</br>
@@ -77,7 +88,7 @@
                         •Cost:
                     </div>
                     <div class="col-md-8 col-sm-6">
-                        dinner is $5 per week </br>
+                        dinner is $4 per week </br>
                         <span>(if it is your first time,dinner is free)</span>
                     </div>
                 </div>
@@ -209,7 +220,7 @@
         </div>
     </div>
     <!-- who can join us -->
-    <div class="container-fluid  join_us hidden-xs  white_bg">
+    <div class="container-fluid  join_us white_bg">
         <div class="origin_point">
             <div class="circle1 img-circle">
                 <p>
@@ -232,7 +243,47 @@
             </div>
         </div>
     </div>
+
+    <!-- get involved -->
+    <div class="container-fluid introduction_pic_box2" id="getInvolvedPic">
+
+    </div>
+     <div class="jumbotron get_involved">
+        <div class="container-fluid">
+            <h2>Get Involved</h2>
+            <div>
+                <p>
+                If you are interested, please:</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4">
+                
+                <img src="<?php echo get_template_directory_uri();?>/images/crossculture-logo.png" class="img-responsive">
+                <p>Come this Thursday </br> AT 6:00PM</p>
+                <p><span>We meet at St. Jude's in Carlton, 2 Keppel St.</span></p>
+                </div>
+
+                <div class="col-md-4">
+                
+                <img src="<?php echo get_template_directory_uri();?>/images/facebook.png" class="img-responsive">
+                <p>Join us on Facebook</br>and have fun</p>
+                <p><span><a href="https://www.facebook.com/crosscultures.melbourne">Click me to join</a></span></p>
+                </div>
+
+                <div class="col-md-4">
+                <img src="<?php echo get_template_directory_uri();?>/images/unichurch.png" class="img-responsive">
+                
+                <p>Come to Unichurch</br> </p>
+                <p><span>6:00PM every Sunday</br>At Eastern Resource Centre (ERC), University Of Melbourne</span></p>
+                </div>
+            </div>
+        
+        </div>
+    </div>
     <!-- like us on facebook -->
     <!--     <div class="container-fluid facebook_box">
     </div> -->
+
     <?php get_footer();?>
+        <script src="<?php echo get_template_directory_uri();?>/js/carousel.js"></script>

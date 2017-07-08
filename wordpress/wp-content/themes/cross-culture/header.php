@@ -16,14 +16,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <!-- <?php wp_head();?> -->
-    <?php
-      $content_text_color = get_option('content_text_color');
-    ?>
-    <style>
-    /*background-color:  <?php /*echo $content_text_color;*/ ?>;*/ 
-      h1 { color: red;}
-    </style>
+    <!-- <?php wp_head();?>  -->
 </head>
 
 <body <?php body_class();?>>
@@ -60,12 +53,12 @@
                                 <!-- <li><a href="#">Our History</a></li> -->
                                 <li><a href="<?php echo get_option('home'); ?>/faq/">FAQ</a></li>
                                 <li><a href="<?php echo get_option('home'); ?>/our-team/">Our Team</a></li>
-                                <li><a href="#">Bible Study Materials</a></li>
+                                <li><a href="<?php echo get_option('home'); ?>/bible-study-materials/">Bible Study Materials</a></li>
                                 <li role="separator" class="divider"></li>
                                 <li><a href="<?php echo get_option('home'); ?>/contact-us/">Contact Us</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Get Involved</a></li>
+                        <li><a href="<?php echo get_option('home'); ?>#getInvolvedPic">Get Involved</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -73,3 +66,5 @@
             <!-- /.container-fluid -->
         </nav>
     </div>
+
+            <div class="transBox"><?php echo do_shortcode('[prisna-google-website-translator]'); ?></div>
