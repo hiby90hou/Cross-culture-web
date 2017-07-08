@@ -9,4 +9,9 @@ function wpbootstrap_scripts_with_jquery()
 }
 add_action( 'wp_enqueue_scripts', 'wpbootstrap_scripts_with_jquery' );
 
+function CC_customize_register( $wp_customize ) {
+  //All our sections, settings, and controls will be added here
+}
+add_action( 'customize_register', 'CC_customize_register' );
+
 ?>

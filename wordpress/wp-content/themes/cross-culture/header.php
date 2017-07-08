@@ -17,6 +17,13 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-- <?php wp_head();?> -->
+    <?php
+      $content_text_color = get_option('content_text_color');
+    ?>
+    <style>
+    /*background-color:  <?php /*echo $content_text_color;*/ ?>;*/ 
+      h1 { color: red;}
+    </style>
 </head>
 
 <body <?php body_class();?>>
