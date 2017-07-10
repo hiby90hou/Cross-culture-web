@@ -1,0 +1,3 @@
+http://192.168.1.3/wordpress/our-events/
+
+<div class="container-fluid">[custom-facebook-feed id=crosscultures.melbourne num=7]</div>

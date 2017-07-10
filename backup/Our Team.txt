@@ -1,0 +1,65 @@
+http://192.168.1.3/wordpress/our-team/
+<h2 style="text-align: center;"><strong>STAFF TEAM</strong></h2>
+<div class="container-fluid">
+<div class="innerPic3">
+<div class="row">
+<div class="col-md-4" style="text-align: center;">
+<div style="display: inline-block; text-align: center;">
+<p style="display: block;">Hannah Tonkin</p>
+<img class="wp-image-97 img-responsive" style="display: inline-block;" src="http://192.168.1.3/wordpress/wp-content/uploads/2017/07/5.png" />
+<p style="display: block;">Hannah is a Cross Cultures trainee with AFES.</p>
+
+</div>
+</div>
+<div class="col-md-4" style="text-align: center;">
+<div style="display: inline-block; text-align: center;">
+<p style="display: block;">Jillian Davey</p>
+<img class=" img-responsive" style="display: inline-block;" src="http://192.168.1.3/wordpress/wp-content/uploads/2017/07/6.jpg" />
+<p style="display: block;">Jillian is a senior staff worker with Cross Cultures.</p>
+
+</div>
+</div>
+<div class="col-md-4" style="text-align: center;">
+<div style="display: inline-block; text-align: center;">
+<p style="display: block;">Chris Morris</p>
+<img class=" img-responsive" style="display: inline-block;" src="http://192.168.1.3/wordpress/wp-content/uploads/2017/07/7.jpg" />
+<p style="display: block;">Chris is the leader of Cross Cultures.</p>
+
+</div>
+</div>
+<div class="col-md-4 col-md-offset-4" style="text-align: center;">
+<div style="display: inline-block; text-align: center;">
+<p style="display: block;">Sophie Keye</p>
+<img class=" img-responsive" style="display: inline-block;" src="http://192.168.1.3/wordpress/wp-content/uploads/2017/07/8.png" />
+<p style="display: block;"></p>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+&nbsp;
+<h2 style="text-align: center;"><strong>STUDENT EXECUTIVE TEAM</strong></h2>
+<img class="alignnone size-medium wp-image-96" src="http://192.168.1.3/wordpress/wp-content/uploads/2017/07/3-300x111.png" alt="" width="100%" />
+<div class="container-fluid">
+<div class="innerPic2">
+<div class="row">
+<div class="col-md-6" style="text-align: center;">
+<div style="display: inline-block; text-align: center;">
+<p style="display: block;">Daniel</p>
+<img class="wp-image-97 img-responsive" style="display: inline-block;" src="http://192.168.1.3/wordpress/wp-content/uploads/2017/07/4.jpg" />
+<p style="display: block;">Daniel is a PhD student from Ecuador.  He loves God and is really keen to see students grow in their faith.</p>
+
+</div>
+</div>
+<div class="col-md-6" style="text-align: center;">
+<div style="display: inline-block; text-align: center;">
+<p style="display: block;">Clarens</p>
+<img class="wp-image-97 img-responsive" style="display: inline-block;" src="http://192.168.1.3/wordpress/wp-content/uploads/2017/07/5.jpg" />
+<p style="display: block;">Clarens is a masters student from the Philipians. She has a servant heart and has a passion for seeing people come to know Christ.</p>
+
+</div>
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,12 @@
+<ul>
+ 	<li>What do people do in this club?</li>
+ 	<li>When and where do they regularly meet together?</li>
+ 	<li>Is it a good club?</li>
+ 	<li>Are they good person?</li>
+ 	<li>What does it cost to join this club?</li>
+ 	<li>Can I be involved if I am not a Christian?</li>
+ 	<li>I know nothing about god, will I still be welcome?</li>
+ 	<li>Do they push me to become Christian when I say yes to this club?</li>
+ 	<li>My English is bad, can they accept me?</li>
+ 	<li>I am a student from another university/college/tafe, can I join?</li>
+</ul>

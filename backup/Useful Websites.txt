@@ -1,0 +1,10 @@
+Useful Websites
+http://192.168.1.3/wordpress/useful-websites/
+
+<ul id="yui_3_17_2_1_1499270232112_147" dir="ltr">
+ 	<li>Two Ways To Live   <a href="http://www.matthiasmedia.com.au/2wtl/" target="_blank" rel="noopener">http://www.matthiasmedia.com.au/2wtl/</a></li>
+ 	<li>Knowing God Personally (PDF) <a href="http://www.crustore.org/downloads/would.pdf" target="_blank" rel="noopener"> http://www.crustore.org/downloads/would.pdf</a></li>
+ 	<li>New Life  <a href="http://www.xinshengming.com/" target="_blank" rel="noopener">http://www.xinshengming.com/</a></li>
+ 	<li>Every Student  <a href="http://www.everystudent.com/" target="_blank" rel="noopener">http://www.everystudent.com/</a></li>
+ 	<li>International Friends  <a href="http://friendsinternational.uk/" target="_blank" rel="noopener">http://friendsinternational.uk/</a></li>
+</ul>
