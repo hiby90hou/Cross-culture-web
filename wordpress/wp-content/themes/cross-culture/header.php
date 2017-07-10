@@ -16,7 +16,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <!-- <?php wp_head();?>  -->
+    <?php wp_head();?>
 </head>
 
 <body <?php body_class();?>>
@@ -67,4 +67,7 @@
         </nav>
     </div>
 
-            <div class="transBox"><?php echo do_shortcode('[prisna-google-website-translator]'); ?></div>
+            <div class="transBox">
+            	<!--<?php echo do_shortcode('[prisna-google-website-translator]'); ?> -->
+            	
+            </div>

@@ -1,19 +1,18 @@
 <?php
 /**
-* Template Name:home page
+* Template Name:Chinese Home Page
 *
 * @package WordPress
 * @subpackage Crosscultures
 * @since Crosscultures 1.0
 */ 
 ?>
-
     <?php get_header();?>
     <!-- banner -->
     <div class="banner-box">
         <a class="banner1" href="#">
-            <div>MAKE FRIENDS,
-                <br> MEET JESUS.</div>
+            <div>结交朋友
+                <br> 认识耶稣</div>
         </a>
     </div>
     <!-- button box -->
@@ -36,18 +35,18 @@
     <div class="jumbotron introduction white_bg">
         <div class="container-fluid">
             <p>Hi, international student!</br>
-                Do you feel lonely because you do not have any friend in Australia?</br>
-                Come to Crossculture! Let's make friends and meet Jesus!
+                Would you like to meet some new friends in Australia?</br>
+                Come to Cross Cultures! Let's make friends and meet Jesus!
             </p>
         </div>
     </div>
     <!-- about crossculture -->
     <div class="jumbotron about_Crossculture">
         <div class="container-fluid">
-            <h1>Crosscultures Christian Club</h1>
-            <h2>Make friends and meet Jesus</h2>
+            <h1>Cross Cultures Club</h1>
+            <h2>run by Christians</h2>
             <p>
-                We are a mix of Australians and Internationals who are passionate about the relationship we can have with God because Jesus died for us.</br>
+                We are a mix of Australians and Internationals who meet to build friendships and investigate the identity of Jesus Christ by reading the bible together.</br>
                 </br>
                 Our main meeting is every Thursday night at 6:00 pm. We also have many other events and activities such as free English class, camps and girls night.
             </p>
@@ -60,9 +59,8 @@
     <div class="jumbotron introduction">
         <div class="container-fluid" >
             <h2>Thursday Night Meeting</h2>
-            <p>We meet Thursday night every week in ST. JUDE'S church, Carlton. In our meeting, we make friends, have dinner, study bible and have social talk with dessert!</br>
-                </br>
-                If you are interesting, please record the following info in your calendar:</br>
+            <p>We meet Thursday night every week in a church near Melbourne Uni.</br> 
+            We have fun people, cool music, good food and impressive bible study!</br>
                 </br>
                 </br>
             </p>
@@ -103,7 +101,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4 col-sm-6">
-                        •Agenda:
+                        •What we do:
                     </div>
                     <div class="col-md-8 col-sm-6">
                     </div>
@@ -136,9 +134,10 @@
     <div class="jumbotron English_class">
         <div class="container-fluid">
             <h2>Free English class</h2>
-            <p>Cannot speak English well? Want to improve your English?</br>
-                At St Jude's church in Carlton (235 Palmerston Street), we are holding FREE English classes every Thursday 5-6 pm, every week of the year.
+            <p>Want to improve your English? Please come early before our main meeting. </br>We are holding FREE English classes every Thursday 5-6 pm.
             </p>
+
+            <p></br><a href="<?php echo get_option('home'); ?>/free-english-class/">More...</a></p>
         </div>
     </div>
     <!-- about our event -->
@@ -261,7 +260,7 @@
                 
                 <img src="<?php echo get_template_directory_uri();?>/images/crossculture-logo.png" class="img-responsive">
                 <p>Come this Thursday </br> AT 6:00PM</p>
-                <p><span>We meet at St. Jude's in Carlton, 2 Keppel St.</span></p>
+                <p><span>We meet at St. Jude's church,</br> 2 Keppel St, Carlton.</br>(Near Melbourne Uni)</span></p>
                 </div>
 
                 <div class="col-md-4">
