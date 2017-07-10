@@ -282,39 +282,40 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 .introduction_pic_box2 {
   width: 100%;
   height: 200px;
-  overflow: hidden;
   background-image: none;
 }
-.introduction_pic_box img,
-.introduction_pic_box2 img {
+.introduction_pic_box span,
+.introduction_pic_box2 span {
   width: 100%;
-  height: auto;
+  height: 100vh;
   display: block;
   position: fixed;
   z-index: -1;
   left: 0;
   top: 0;
+  background-image: url("../images/meeting.jpg");
+  background-position: center;
+  background-size: cover;
 }
 .introduction_pic_box2 {
   height: 100px;
 }
 @media (max-width: 768px) {
-  .introduction_pic_box2 {
-    background-image: url("../images/meeting.jpg");
+  .introduction_pic_box2,
+  .introduction_pic_box {
+    background-image: url("../images/meeting_s.jpg");
     background-position: center;
     background-size: cover;
-  }
-}
-@media (max-width: 768px) {
-  .introduction_pic_box {
     width: 100%;
     padding: 0;
-    height: auto;
   }
-  .introduction_pic_box img {
-    width: 100%;
-    height: auto;
-    position: relative;
+  .introduction_pic_box2 span,
+  .introduction_pic_box span {
+    background-image: none;
+  }
+  .introduction_pic_box2 .introduction_pic_box,
+  .introduction_pic_box .introduction_pic_box {
+    height: 100px;
   }
 }
 .introduction {
@@ -612,7 +613,8 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 }
 /* sidebar */
 .blank_head_box {
-  background: url("../images/city.jpg") center;
+  background-image: url("../images/city.jpg");
+  background-position: center;
   background-size: cover;
   width: 100%;
   height: 400px;
@@ -635,6 +637,16 @@ fieldset[disabled] .my-navbar .btn-link:focus {
 }
 .blank_head_box h1 a:hover {
   text-decoration: none;
+}
+@media (min-width: 768px) {
+  .blank_head_box {
+    background-image: url("../images/city.jpg");
+  }
+}
+@media (max-width: 767px) {
+  .blank_head_box {
+    background-image: url("../images/city_m.jpg");
+  }
 }
 #sidebar {
   float: right;
@@ -841,9 +853,6 @@ fieldset[disabled] .my-navbar .btn-link:focus {
   padding: 5px;
   border-radius: 3px;
   transform: translateX(50%);
-}
-.goog-te-banner-frame {
-  display: none;
 }
 /* avoid overlapping with admin bar*/
 .admin-bar .navbar-fixed-top {

@@ -7,12 +7,13 @@
 * @since Crosscultures 1.0
 */ 
 ?>
+
     <?php get_header();?>
     <!-- banner -->
     <div class="banner-box">
         <a class="banner1" href="#">
-            <div>结交朋友
-                <br> 认识耶稣</div>
+            <div>MAKE FRIENDS,
+                <br> MEET JESUS.</div>
         </a>
     </div>
     <!-- button box -->
@@ -54,7 +55,8 @@
     </div>
     <!-- main meeting -->
     <div class="container-fluid introduction_pic_box" id="thursdayMeeting">
-        <img class="img-responsive" src="<?php echo get_template_directory_uri();?>/images/meeting.jpg">
+        <span></span>
+        <!-- <img class="img-responsive" src="<?php echo get_template_directory_uri();?>/images/meeting.jpg"> -->
     </div>
     <div class="jumbotron introduction">
         <div class="container-fluid" >
@@ -245,7 +247,7 @@
 
     <!-- get involved -->
     <div class="container-fluid introduction_pic_box2" id="getInvolvedPic">
-
+        <span></span>
     </div>
      <div class="jumbotron get_involved">
         <div class="container-fluid">
@@ -259,8 +261,8 @@
                 <div class="col-md-4">
                 
                 <img src="<?php echo get_template_directory_uri();?>/images/crossculture-logo.png" class="img-responsive">
-                <p>Come this Thursday </br> AT 6:00PM</p>
-                <p><span>We meet at St. Jude's church,</br> 2 Keppel St, Carlton.</br>(Near Melbourne Uni)</span></p>
+                <p>Come this Thursday</p>
+                <p><span>AT 6:00PM</br>We meet at St. Jude's church,</br> 2 Keppel St, Carlton.</br>(Near Melbourne Uni)</span></p>
                 </div>
 
                 <div class="col-md-4">

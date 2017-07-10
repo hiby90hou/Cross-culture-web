@@ -55,7 +55,8 @@
     </div>
     <!-- main meeting -->
     <div class="container-fluid introduction_pic_box" id="thursdayMeeting">
-        <img class="img-responsive" src="<?php echo get_template_directory_uri();?>/images/meeting.jpg">
+        <span></span>
+        <!-- <img class="img-responsive" src="<?php echo get_template_directory_uri();?>/images/meeting.jpg"> -->
     </div>
     <div class="jumbotron introduction">
         <div class="container-fluid" >
@@ -246,7 +247,7 @@
 
     <!-- get involved -->
     <div class="container-fluid introduction_pic_box2" id="getInvolvedPic">
-
+        <span></span>
     </div>
      <div class="jumbotron get_involved">
         <div class="container-fluid">
