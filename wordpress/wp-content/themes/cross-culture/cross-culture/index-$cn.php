@@ -12,8 +12,8 @@
     <!-- banner -->
     <div class="banner-box">
         <a class="banner1" href="#">
-            <div>MAKE FRIENDS,
-                <br> MEET JESUS.</div>
+            <div>结交朋友
+                <br> 认识耶稣</div>
         </a>
     </div>
     <!-- button box -->
@@ -21,13 +21,13 @@
         <div class="button_box">
             <div class="row">
                 <div class="col-md-4">
-                    <button type="button" class="btn btn-info"><a href="<?php echo get_option('home'); ?>/our-events/">What's on</a></button>
+                    <button type="button" class="btn btn-info"><a href="<?php echo get_option('home'); ?>/our-events/">新活动</a></button>
                 </div>
                 <div class="col-md-4">
                     <button type="button" class="btn btn-info"><a href="<?php echo get_option('home'); ?>/faq/">FAQ</a></button>
                 </div>
                 <div class="col-md-4">
-                    <button type="button" class="btn btn-info"><a href="<?php echo get_option('home'); ?>#getInvolvedPic">I am new</a></button>
+                    <button type="button" class="btn btn-info"><a href="<?php echo get_option('home'); ?>#getInvolvedPic">我是新人</a></button>
                 </div>
             </div>
         </div>
@@ -35,21 +35,21 @@
     <!-- introduction -->
     <div class="jumbotron introduction white_bg">
         <div class="container-fluid">
-            <p>Hi, international student!</br>
-                Would you like to meet some new friends in Australia?</br>
-                Come to Cross Cultures! Let's make friends and meet Jesus!
+            <p>Hi，你是国际留学生吗？</br>
+                你想在澳洲认识一些新朋友吗？</br>
+                来我们的Cross Cultures俱乐部吧！我们可以一起交友以及了解基督教！
             </p>
         </div>
     </div>
     <!-- about crossculture -->
     <div class="jumbotron about_Crossculture">
         <div class="container-fluid">
-            <h1>Cross Cultures Club</h1>
-            <h2>run by Christians</h2>
+            <h1>Cross Cultures俱乐部</h1>
+            <h2>由基督徒所组织</h2>
             <p>
-                We are a mix of Australians and Internationals who meet to build friendships and investigate the identity of Jesus Christ by reading the bible together.</br>
+                我们是一群由澳洲本地人和国际留学生组成的年轻人。因为想要交到新朋友以及更多的了解耶稣基督，我们聚集在一起学习圣经。</br>
                 </br>
-                Our main meeting is every Thursday night at 6:00 pm. We also have many other events and activities such as free English class, camps and girls night.
+                我们会在每周四晚上6点举办定期聚会，除此之外我们也有其他的活动，比如说免费英语课，露营和女士晚会。
             </p>
         </div>
     </div>
@@ -60,41 +60,33 @@
     </div>
     <div class="jumbotron introduction">
         <div class="container-fluid" >
-            <h2>Thursday Night Meeting</h2>
-            <p>We meet Thursday night every week in a church near Melbourne Uni.</br> 
-            We have fun people, cool music, good food and impressive bible study!</br>
+            <h2>周四晚间聚会</h2>
+            <p>我们每周四都会在距离墨大很近的一个教堂见面。</br> 
+            在那里，我们有潮人，酷炫的音乐，美食和有说服力的圣经讲解！</br>
                 </br>
                 </br>
             </p>
-            <!--         <p>
-        •Time:     every Thursday 6pm</br>
-        •Cost:      dinner is $4 per week </br>
-                            (if it is your first time,dinner is free)</br>
-        •Place:     ST. JUDE'S ANGLICAN CHURCH</br>
-                            2 KEPPEL ST, CARLTON, VIC, 3053</br>
-        •Agenda:</br>
-        </p>  -->
             <div class="container-fluid info_table">
                 <div class="row">
                     <div class="col-md-4 col-sm-6">
-                        •Time:
+                        •时间:
                     </div>
                     <div class="col-md-8 col-sm-6">
-                        every Thursday 6pm</br>
+                        每周四 6pm</br>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4 col-sm-6">
-                        •Cost:
+                        •费用:
                     </div>
                     <div class="col-md-8 col-sm-6">
-                        dinner is $4 per week </br>
-                        <span>(if it is your first time,dinner is free)</span>
+                        每周的晚餐是 $4 每个人 </br>
+                        <span>(如果你第一次来，晚餐免费)</span>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4 col-sm-6">
-                        •Place:
+                        •地点:
                     </div>
                     <div class="col-md-8 col-sm-6">
                         ST. JUDE'S Anglican Church</br>
@@ -103,7 +95,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4 col-sm-6">
-                        •What we do:
+                        •我们都在干什么:
                     </div>
                     <div class="col-md-8 col-sm-6">
                     </div>
@@ -116,17 +108,17 @@
                 <div class="col-md-4">
                     <p>6:00</p>
                     <div class="circlePic img-circle pic1"></div>
-                    <p>Make friends & </br> have Dinner</p>
+                    <p>认识新朋友 & </br> 吃晚餐</p>
                 </div>
                 <div class="col-md-4">
                     <p>7:00</p>
                     <div class="circlePic img-circle pic2"></div>
-                    <p>Pray for Country & </br> Bible Study</p>
+                    <p>为各国祈祷 & </br> 学习圣经</p>
                 </div>
                 <div class="col-md-4">
                     <p>8:30</p>
                     <div class="circlePic img-circle pic3"></div>
-                    <p>Social Talk & </br> Dessert Time</p>
+                    <p>聊天 & </br> 吃甜点</p>
                 </div>
             </div>
         </div>
@@ -135,17 +127,16 @@
     <!-- free English class -->
     <div class="jumbotron English_class">
         <div class="container-fluid">
-            <h2>Free English class</h2>
-            <p>Want to improve your English? Please come early before our main meeting. </br>We are holding FREE English classes every Thursday 5-6 pm.
-            </p>
+            <h2>免费的英语课</h2>
+            <p>想提高英语吗？你可以在我们的聚会之前早来一点儿。 </br>我们在周四的5点到6点之间提供免费的英语课。</p>
 
-            <p></br><a href="<?php echo get_option('home'); ?>/free-english-class/">More...</a></p>
+            <p></br><a href="<?php echo get_option('home'); ?>/free-english-class/">更多...</a></p>
         </div>
     </div>
     <!-- about our event -->
     <div class="jumbotron about_event">
         <div class="container-fluid">
-            <h2>We have Events</h2>
+            <h2>我们的活动</h2>
             <!-- <div class="event_pic"></div> -->
             <!-- carousel for mobile devices-->
             <div class="carouselSm hidden-md hidden-lg">
@@ -225,22 +216,22 @@
         <div class="origin_point">
             <div class="circle1 img-circle">
                 <p>
-                    <span>Who</span></br>
-                    Can Join Us
+                    <span>谁</span></br>
+                    能加入
                 </p>
             </div>
             <div class="circle2 img-circle"></div>
             <div class="circle3 img-circle">
-                <p>International student welcome</p>
+                <p>国际学生</p>
             </div>
             <div class="circle4 img-circle">
-                <p>Every school / university's student welcome</p>
+                <p>所有学校的学生</p>
             </div>
             <div class="circle5 img-circle">
-                <p>All English Level welcome</p>
+                <p>不论英文能力高低</p>
             </div>
             <div class="circle6 img-circle">
-                <p>Christian / non-Christian welcome</p>
+                <p>不论是否信奉耶稣</p>
             </div>
         </div>
     </div>
@@ -251,32 +242,31 @@
     </div>
      <div class="jumbotron get_involved">
         <div class="container-fluid">
-            <h2>Get Involved</h2>
+            <h2>快来加入！</h2>
             <div>
-                <p>
-                If you are interested, please:</p>
+                <p>如果你感兴趣，可以通过以下方式联系我们:</p>
             </div>
             
             <div class="row">
                 <div class="col-md-4">
                 
                 <img src="<?php echo get_template_directory_uri();?>/images/crossculture-logo.png" class="img-responsive">
-                <p>Come this Thursday</p>
-                <p><span>AT 6:00PM</br>We meet at St. Jude's church,</br> 2 Keppel St, Carlton.</br>(Near Melbourne Uni)</span></p>
+                <p>在这周四直接过来</p>
+                <p><span>6:00PM</br>我们在 St. Jude's 教堂见面,</br> 2 Keppel St, Carlton.</br>(在墨大附近)</span></p>
                 </div>
 
                 <div class="col-md-4">
                 
                 <img src="<?php echo get_template_directory_uri();?>/images/facebook.png" class="img-responsive">
-                <p>Join us on Facebook</br>and have fun</p>
-                <p><span><a href="https://www.facebook.com/crosscultures.melbourne">Click me to join</a></span></p>
+                <p>加我们的Facebook</br><span>上面有很多有趣的信息</span></p>
+                <p><span><a href="https://www.facebook.com/crosscultures.melbourne">点我加入</a></span></p>
                 </div>
 
                 <div class="col-md-4">
                 <img src="<?php echo get_template_directory_uri();?>/images/unichurch.png" class="img-responsive">
                 
-                <p>Come to Unichurch</br> </p>
-                <p><span>6:00PM every Sunday</br>At Eastern Resource Centre (ERC), University Of Melbourne</span></p>
+                <p>周日去Unichurch</br> </p>
+                <p><span>6:00PM</br>在墨尔本大学的 Eastern Resource Centre (ERC)</span></p>
                 </div>
             </div>
         
