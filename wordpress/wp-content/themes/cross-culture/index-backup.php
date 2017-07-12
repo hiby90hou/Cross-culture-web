@@ -12,7 +12,8 @@
     <!-- banner -->
     <div class="banner-box">
         <a class="banner1" href="#">
-            <div><?php echo get_theme_mod( 'banner_text', 'MAKE FRIENDS,<br>MEET JESUS.' ); ?></div>
+            <div>MAKE FRIENDS,
+                <br> MEET JESUS.</div>
         </a>
     </div>
     <!-- button box -->
@@ -34,17 +35,21 @@
     <!-- introduction -->
     <div class="jumbotron introduction white_bg">
         <div class="container-fluid">
-            <p id='welcome_text'><?php echo get_theme_mod( 'welcome_text', "I come from back endHi, international student!</br>Would you like to meet some new friends in Australia?</br>Come to Cross Cultures! Let's make friends and meet Jesus!" ); ?>
+            <p>Hi, international student!</br>
+                Would you like to meet some new friends in Australia?</br>
+                Come to Cross Cultures! Let's make friends and meet Jesus!
             </p>
         </div>
     </div>
     <!-- about crossculture -->
     <div class="jumbotron about_Crossculture">
-        <div class="container-fluid" id="intro_section">
-            <h1><?php echo get_theme_mod( 'intro_title', 'Cross Cultures Club'); ?></h1>
-            <h2><?php echo get_theme_mod( 'intro_subtitle', 'run by Christians' ); ?></h2>
+        <div class="container-fluid">
+            <h1>Cross Cultures Club</h1>
+            <h2>run by Christians</h2>
             <p>
-                <?php echo get_theme_mod( 'intro_text', 'We are a mix of Australians and Internationals who meet to build friendships and investigate the identity of Jesus Christ by reading the bible together.</br></br>Our main meeting is every Thursday night at 6:00 pm. We also have many other events and activities such as free English class, camps and girls night.' ); ?>
+                We are a mix of Australians and Internationals who meet to build friendships and investigate the identity of Jesus Christ by reading the bible together.</br>
+                </br>
+                Our main meeting is every Thursday night at 6:00 pm. We also have many other events and activities such as free English class, camps and girls night.
             </p>
         </div>
     </div>
@@ -54,9 +59,13 @@
         <!-- <img class="img-responsive" src="<?php echo get_template_directory_uri();?>/images/meeting.jpg"> -->
     </div>
     <div class="jumbotron introduction">
-        <div class="container-fluid" id="main_section">
-            <h2><?php echo get_theme_mod( 'main_title', 'Thursday Night Meeting'); ?></h2>
-            <p><?php echo get_theme_mod( 'main_text', 'We meet Thursday night every week in a church near Melbourne Uni.</br>We have fun people, cool music, good food and impressive bible study!' ); ?></br></br></br></p>
+        <div class="container-fluid" >
+            <h2>Thursday Night Meeting</h2>
+            <p>We meet Thursday night every week in a church near Melbourne Uni.</br> 
+            We have fun people, cool music, good food and impressive bible study!</br>
+                </br>
+                </br>
+            </p>
             <!--         <p>
         •Time:     every Thursday 6pm</br>
         •Cost:      dinner is $4 per week </br>
@@ -70,24 +79,26 @@
                     <div class="col-md-4 col-sm-6">
                         •Time:
                     </div>
-                    <div class="col-md-8 col-sm-6" id="meeting_time">
-                        <?php echo get_theme_mod( 'main_time', 'every Thursday 6pm' ); ?>
+                    <div class="col-md-8 col-sm-6">
+                        every Thursday 6pm</br>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4 col-sm-6">
                         •Cost:
                     </div>
-                    <div class="col-md-8 col-sm-6" id="meeting_cost">
-                        <?php echo get_theme_mod( 'main_cost', 'dinner is $4 per week </br><span>(if it is your first time,dinner is free)</span>' ); ?>
+                    <div class="col-md-8 col-sm-6">
+                        dinner is $4 per week </br>
+                        <span>(if it is your first time,dinner is free)</span>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4 col-sm-6">
                         •Place:
                     </div>
-                    <div class="col-md-8 col-sm-6" id="meeting_place">
-                        <?php echo get_theme_mod( 'main_place', "ST. JUDE'S Anglican Church</br><span>2 KEPPEL ST, CARLTON, VIC, 3053</span>"); ?>
+                    <div class="col-md-8 col-sm-6">
+                        ST. JUDE'S Anglican Church</br>
+                        <span>2 KEPPEL ST, CARLTON, VIC, 3053</span>
                     </div>
                 </div>
                 <div class="row">
@@ -102,20 +113,20 @@
         <!-- clock -->
         <div class="container-fluid time_table">
             <div class="row">
-                <div class="col-md-4" id="time_table1">
-                    <p><?php echo get_theme_mod( 'main_act_timetable1', '6:00' ); ?></p>
+                <div class="col-md-4">
+                    <p>6:00</p>
                     <div class="circlePic img-circle pic1"></div>
-                    <p><?php echo get_theme_mod( 'main_act_desc1', 'Make friends & </br> have Dinner' ); ?></p>
+                    <p>Make friends & </br> have Dinner</p>
                 </div>
-                <div class="col-md-4" id="time_table2">
-                    <p><?php echo get_theme_mod( 'main_act_timetable2', '7:00' ); ?></p>
+                <div class="col-md-4">
+                    <p>7:00</p>
                     <div class="circlePic img-circle pic2"></div>
-                    <p><?php echo get_theme_mod( 'main_act_desc2', 'Pray for Country & </br> Bible Study' ); ?></p>
+                    <p>Pray for Country & </br> Bible Study</p>
                 </div>
-                <div class="col-md-4" id="time_table3">
-                    <p><?php echo get_theme_mod( 'main_act_timetable3', '8:30' ); ?></p>
+                <div class="col-md-4">
+                    <p>8:30</p>
                     <div class="circlePic img-circle pic3"></div>
-                    <p><?php echo get_theme_mod( 'main_act_desc3', 'Social Talk & </br> Dessert Time' ); ?></p>
+                    <p>Social Talk & </br> Dessert Time</p>
                 </div>
             </div>
         </div>
@@ -124,8 +135,9 @@
     <!-- free English class -->
     <div class="jumbotron English_class">
         <div class="container-fluid">
-            <h2><?php echo get_theme_mod( 'En_class_title', 'Free English class' ); ?></h2>
-            <p><?php echo get_theme_mod( 'En_class_desc', 'Want to improve your English? Please come early before our main meeting. </br>We are holding FREE English classes every Thursday 5-6 pm.' ); ?></p>
+            <h2>Free English class</h2>
+            <p>Want to improve your English? Please come early before our main meeting. </br>We are holding FREE English classes every Thursday 5-6 pm.
+            </p>
 
             <p></br><a href="<?php echo get_option('home'); ?>/free-english-class/">More...</a></p>
         </div>
@@ -133,7 +145,7 @@
     <!-- about our event -->
     <div class="jumbotron about_event">
         <div class="container-fluid">
-            <h2>Our Events</h2>
+            <h2>We have Events</h2>
             <!-- <div class="event_pic"></div> -->
             <!-- carousel for mobile devices-->
             <div class="carouselSm hidden-md hidden-lg">
@@ -246,25 +258,25 @@
             </div>
             
             <div class="row">
-                <div class="col-md-4" id="contact_thursday">
+                <div class="col-md-4">
                 
                 <img src="<?php echo get_template_directory_uri();?>/images/crossculture-logo.png" class="img-responsive">
-                <p><?php echo get_theme_mod( 'contact_meeting_title', 'Come this Thursday' ); ?></p>
-                <p><span><?php echo get_theme_mod( 'contact_meeting_description', "AT 6:00PM</br>We meet at St. Jude's church,</br> 2 Keppel St, Carlton.</br>(Near Melbourne Uni)" ); ?></span></p>
+                <p>Come this Thursday</p>
+                <p><span>AT 6:00PM</br>We meet at St. Jude's church,</br> 2 Keppel St, Carlton.</br>(Near Melbourne Uni)</span></p>
                 </div>
 
-                <div class="col-md-4" id="contact_facebook">
+                <div class="col-md-4">
                 
                 <img src="<?php echo get_template_directory_uri();?>/images/facebook.png" class="img-responsive">
-                <p><?php echo get_theme_mod( 'contact_facebook_title', 'Join us on Facebook</br>and have fun' ); ?></p>
-                <p><span><a href="<?php echo get_theme_mod( 'contact_facebook_link', 'https://www.facebook.com/crosscultures.melbourne' ); ?>">Click me to join</a></span></p>
+                <p>Join us on Facebook</br>and have fun</p>
+                <p><span><a href="https://www.facebook.com/crosscultures.melbourne">Click me to join</a></span></p>
                 </div>
 
-                <div class="col-md-4" id="contact_church">
+                <div class="col-md-4">
                 <img src="<?php echo get_template_directory_uri();?>/images/unichurch.png" class="img-responsive">
                 
-                <p><?php echo get_theme_mod( 'contact_church_title', 'Come to Unichurch' ); ?></p>
-                <p><span><?php echo get_theme_mod( 'contact_church_desc', '6:00PM every Sunday</br>At Eastern Resource Centre (ERC), University Of Melbourne' ); ?></span></p>
+                <p>Come to Unichurch</br> </p>
+                <p><span>6:00PM every Sunday</br>At Eastern Resource Centre (ERC), University Of Melbourne</span></p>
                 </div>
             </div>
         
