@@ -12,141 +12,136 @@
 </head>
 <body>
 
-	<canvas id="clock" width="500" height="500" onClick=resetcolor()>
+	<canvas id="clock" width="500" height="500">
 		
 	</canvas>
 
 	<script>
-		var clock=document.getElementById("clock");
-		var cxt=clock.getContext("2d");
-		var colr=(200+Math.floor(Math.random()*55.99));
-		var colg=(200+Math.floor(Math.random()*55.99));
-		var colb=(200+Math.floor(Math.random()*55.99));
 		
-		function resetcolor(){
-			colr=(200+Math.floor(Math.random()*55.99));
-			colg=(200+Math.floor(Math.random()*55.99));
-			colb=(200+Math.floor(Math.random()*55.99));
-		}
-		
-		function drawClock(hour, minute){
-		
-		var hou=hour;
-		var min=minute;
-		
-		//转换12小时进制
-		hou=hou>12?hou-12:hou;
-		//清空画布
-		cxt.clearRect(0,0,500,500);
+		function drawClock(id, hour, minute){
 
-		//表盘
-		cxt.fill();
-		cxt.fillStyle="white";
-		cxt.beginPath();
-		cxt.arc(250,250,205,0,Math.PI*2,true);
-		cxt.closePath();
-		cxt.fill();
-		//蓝色表盘（边框）
-		cxt.strokeStyle="#dddddd"
-		cxt.lineWidth=10;
-		cxt.beginPath();
-		cxt.arc(250,250,185,0,Math.PI*2,true);
-		cxt.closePath();
-		cxt.stroke();
-		cxt.strokeStyle="#"+colr.toString(16)+colg.toString(16)+colb.toString(16);
-		cxt.lineWidth=10;
-		cxt.beginPath();
-		cxt.arc(250,250,200,0,Math.PI*2,true);
-		cxt.closePath();
-		cxt.stroke();
-		cxt.strokeStyle="#"+colr.toString(16)+colg.toString(16)+colb.toString(16);
-		cxt.lineWidth=3;
-		cxt.beginPath();
-		cxt.arc(250,250,192,0,Math.PI*2,true);
-		cxt.closePath();
-		cxt.stroke();
-		cxt.strokeStyle="#"+(colr-100).toString(16)+(colg-100).toString(16)+(colb-100).toString(16);
-		cxt.lineWidth=5;
-		cxt.beginPath();
-		cxt.arc(250,250,205,0,Math.PI*2,true);
-		cxt.closePath();
-		cxt.stroke();
+			var clock=document.getElementById(id);
+			var cxt=clock.getContext("2d");
+			var colr=(200+Math.floor(Math.random()*55.99));
+			var colg=(200+Math.floor(Math.random()*55.99));
+			var colb=(200+Math.floor(Math.random()*55.99));
+		
+			var hou=hour;
+			var min=minute;
+			
+			//转换12小时进制
+			hou=hou>12?hou-12:hou;
+			//清空画布
+			cxt.clearRect(0,0,500,500);
 
-		//时刻度
-		for(var i=0;i<12;i++){
-			cxt.save();
-			cxt.lineWidth=5;
-			cxt.strokeStyle="black";
-			//设置原点
-			cxt.translate(250,250);
-			//设置旋转角度;
-			cxt.rotate(30*i/180*Math.PI);
+			//表盘
+			cxt.fill();
+			cxt.fillStyle="white";
 			cxt.beginPath();
-			cxt.moveTo(0,180);
-			cxt.lineTo(0,160);
+			cxt.arc(250,250,205,0,Math.PI*2,true);
+			cxt.closePath();
+			cxt.fill();
+			//蓝色表盘（边框）
+			cxt.strokeStyle="#dddddd"
+			cxt.lineWidth=10;
+			cxt.beginPath();
+			cxt.arc(250,250,185,0,Math.PI*2,true);
 			cxt.closePath();
 			cxt.stroke();
-			cxt.restore();
-		}
-		//分刻度
-		for(var i=0;i<60;i++){
-			if(i%5!=0){
+			cxt.strokeStyle="#"+colr.toString(16)+colg.toString(16)+colb.toString(16);
+			cxt.lineWidth=10;
+			cxt.beginPath();
+			cxt.arc(250,250,200,0,Math.PI*2,true);
+			cxt.closePath();
+			cxt.stroke();
+			cxt.strokeStyle="#"+colr.toString(16)+colg.toString(16)+colb.toString(16);
+			cxt.lineWidth=3;
+			cxt.beginPath();
+			cxt.arc(250,250,192,0,Math.PI*2,true);
+			cxt.closePath();
+			cxt.stroke();
+			cxt.strokeStyle="#"+(colr-100).toString(16)+(colg-100).toString(16)+(colb-100).toString(16);
+			cxt.lineWidth=5;
+			cxt.beginPath();
+			cxt.arc(250,250,205,0,Math.PI*2,true);
+			cxt.closePath();
+			cxt.stroke();
+
+			//时刻度
+			for(var i=0;i<12;i++){
 				cxt.save();
-				cxt.lineWidth=2;
+				cxt.lineWidth=5;
 				cxt.strokeStyle="black";
 				//设置原点
 				cxt.translate(250,250);
 				//设置旋转角度;
-				cxt.rotate(6*i/180*Math.PI);
+				cxt.rotate(30*i/180*Math.PI);
 				cxt.beginPath();
-				cxt.moveTo(0,175);
-				cxt.lineTo(0,165);
+				cxt.moveTo(0,180);
+				cxt.lineTo(0,160);
 				cxt.closePath();
 				cxt.stroke();
 				cxt.restore();
 			}
+			//分刻度
+			for(var i=0;i<60;i++){
+				if(i%5!=0){
+					cxt.save();
+					cxt.lineWidth=2;
+					cxt.strokeStyle="black";
+					//设置原点
+					cxt.translate(250,250);
+					//设置旋转角度;
+					cxt.rotate(6*i/180*Math.PI);
+					cxt.beginPath();
+					cxt.moveTo(0,175);
+					cxt.lineTo(0,165);
+					cxt.closePath();
+					cxt.stroke();
+					cxt.restore();
+				}
+			}
+
+			//时针
+			cxt.save();
+			cxt.lineWidth=12;
+			cxt.strokeStyle="black";
+			cxt.beginPath();
+			cxt.translate(250,250);
+			cxt.rotate((hou*30+min*0.5+180)/180*Math.PI);
+			cxt.moveTo(0,0);
+			cxt.lineTo(0,90);
+			cxt.closePath();
+			cxt.stroke()
+			cxt.restore();
+			//分针
+			cxt.save();
+			cxt.lineWidth=5;
+			cxt.strokeStyle="black";
+			cxt.beginPath();
+			cxt.translate(250,250);
+			cxt.rotate((min*6+180)/180*Math.PI);
+			cxt.moveTo(0,0);
+			cxt.lineTo(0,130);
+			cxt.closePath();
+			cxt.stroke()
+			cxt.restore();
+
+			//表盘中心装饰
+			cxt.fillStyle="black";
+			cxt.beginPath();
+			cxt.arc(250,250,13,0,Math.PI*2,true);
+			cxt.closePath();
+			cxt.fill();
+			cxt.fillStyle="white";
+			cxt.beginPath();
+			cxt.arc(250,250,10,0,Math.PI*2,true);
+			cxt.closePath();
+			cxt.fill();
+			
 		}
 
-		//时针
-		cxt.save();
-		cxt.lineWidth=12;
-		cxt.strokeStyle="black";
-		cxt.beginPath();
-		cxt.translate(250,250);
-		cxt.rotate((hou*30+min*0.5+180)/180*Math.PI);
-		cxt.moveTo(0,0);
-		cxt.lineTo(0,90);
-		cxt.closePath();
-		cxt.stroke()
-		cxt.restore();
-		//分针
-		cxt.save();
-		cxt.lineWidth=5;
-		cxt.strokeStyle="black";
-		cxt.beginPath();
-		cxt.translate(250,250);
-		cxt.rotate((min*6+180)/180*Math.PI);
-		cxt.moveTo(0,0);
-		cxt.lineTo(0,130);
-		cxt.closePath();
-		cxt.stroke()
-		cxt.restore();
-
-		//表盘中心装饰
-		cxt.fillStyle="black";
-		cxt.beginPath();
-		cxt.arc(250,250,13,0,Math.PI*2,true);
-		cxt.closePath();
-		cxt.fill();
-		cxt.fillStyle="white";
-		cxt.beginPath();
-		cxt.arc(250,250,10,0,Math.PI*2,true);
-		cxt.closePath();
-		cxt.fill();
-		
-	}
-
-	drawClock(7,30);
+		drawClock('clock',7,30);
 	</script>
 
 </body>
